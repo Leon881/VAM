@@ -35,6 +35,7 @@ namespace Multiplector
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            //Привет я с вами!!!
             var view = new ConverterTool();
             this.OutputView.Content = view;
         }
