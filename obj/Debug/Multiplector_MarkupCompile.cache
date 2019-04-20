@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ПК\source\repos\vam\obj\Debug\
+D:\GitHubProject\VAM\obj\Debug\
 Multiplector
 none
 false
 DEBUG;TRACE
-C:\Users\ПК\source\repos\vam\App.xaml
+D:\GitHubProject\VAM\App.xaml
 3-512338601
 
-7-1582710037
+11-1275729587
 131569487696
 MainWindow.xaml;Tools\ConverterTool.xaml;Tools\CalculatorTool.xaml;
 
-False
+True
 
