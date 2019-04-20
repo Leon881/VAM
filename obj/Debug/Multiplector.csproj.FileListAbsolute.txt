@@ -1,0 +1,38 @@
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\bin\Debug\Multiplector.exe.config
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\bin\Debug\Multiplector.exe
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\bin\Debug\Multiplector.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.csprojAssemblyReference.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\MainWindow.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\App.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\MainWindow.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Tools\ConverterTool.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.g.resources
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.csproj.GenerateResource.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.exe
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Multiplector.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Tools\CalculatorTool.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\Multiplector\Multiplector\obj\Debug\Tools\CalculatorTool.baml
+C:\Users\ПК\source\repos\vam\bin\Debug\Multiplector.exe.config
+C:\Users\ПК\source\repos\vam\bin\Debug\Multiplector.exe
+C:\Users\ПК\source\repos\vam\bin\Debug\Multiplector.pdb
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.csprojResolveAssemblyReference.cache
+C:\Users\ПК\source\repos\vam\obj\Debug\MainWindow.g.cs
+C:\Users\ПК\source\repos\vam\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\ПК\source\repos\vam\obj\Debug\Tools\CalculatorTool.g.cs
+C:\Users\ПК\source\repos\vam\obj\Debug\App.g.cs
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\ПК\source\repos\vam\obj\Debug\MainWindow.baml
+C:\Users\ПК\source\repos\vam\obj\Debug\Tools\ConverterTool.baml
+C:\Users\ПК\source\repos\vam\obj\Debug\Tools\CalculatorTool.baml
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.g.resources
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.csproj.GenerateResource.Cache
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.exe
+C:\Users\ПК\source\repos\vam\obj\Debug\Multiplector.pdb
