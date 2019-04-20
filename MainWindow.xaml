@@ -5,22 +5,74 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Multiplector"
         mc:Ignorable="d"
-        Title="Multitool" Height="480" Width="583.642" ResizeMode="NoResize">
-    <Window.Background>
-        <ImageBrush ImageSource="image/paper.jpg"/>
-    </Window.Background>
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto" MinWidth="128" />
-            <ColumnDefinition />
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.Column="0" Margin="10,0,10,9.6" Height="373" VerticalAlignment="Bottom">
-            <Button Command="{Binding LoadMainUCCommand, Mode=OneTime}"
-                Margin="10,10,-0.4,10" Width="88" Height="30" HorizontalAlignment="Left" Content="Конвертер" FontSize="14" Click="Button_Click_1"/>
-            <Button Command="{Binding LoadFirstUCCommand, Mode=OneTime}"
-                Margin="10,10,-0.4,10" Width="88" Height="30" HorizontalAlignment="Left" Click="Button_Click" Content="Калькулятор" FontSize="14"/>
-        </StackPanel>
-        <ContentPresenter Grid.Column="1" x:Name="OutputView" Margin="0,0,-0.4,0.4" Height="450" />
-        <Label Content=" МЕНЮ" VerticalAlignment="Top" Margin="10,10,10,0" Height="45" Width="108" FontWeight="Bold" FontSize="22" FontFamily="{DynamicResource {x:Static SystemFonts.CaptionFontFamilyKey}}" HorizontalAlignment="Center"/>
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"  
+        Title="MainWindow" Height="600" Width="780" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Foreground="White">
+    <Window.Resources>
+        <Storyboard x:Key="MenuOpen">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="160"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Key="MenuClose">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="160"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.Triggers>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuOpen}"/>
+        </EventTrigger>
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource MenuClose}"/>
+        </EventTrigger>
+    </Window.Triggers>
+
+    <Grid Background="WhiteSmoke">
+        <Grid Height="70" VerticalAlignment="Top" Background="#FF2B75E0">
+            <TextBlock Text="Multitool" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
+            <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text ="Parameters" VerticalAlignment="Center" FontSize="18"/>
+                <materialDesign:PopupBox Margin="05" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
+                    <StackPanel Width="150">
+                        <Button Content="О программе" Click="AboutProgramm_Click"/>
+                        <Button Content="Настройки"/>
+                        <Button Content="Инструкция"/>
+                        <Separator/>
+                        <Button x:Name="ButtonPopUp" Content="Выход" Click="ButtonPopUp_Click"/>
+                    </StackPanel>
+                </materialDesign:PopupBox>
+
+            </StackPanel>
+        </Grid>
+        <ContentPresenter x:Name="OutputView" Width="712" HorizontalAlignment="Right" Margin="0,71,-0.4,0.4" Height="500"/>
+        <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="Firebrick">
+            <StackPanel>
+                <Grid Height="150" Background="White">
+                    <Button x:Name="ButtonCloseMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Foreground="#FF1F649C" Kind="ArrowLeft" Width="25" Height="25"/>
+                    </Button>
+                    <Button x:Name="ButtonOpenMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
+                        <materialDesign:PackIcon Foreground="#FF2B75E0" Kind="Menu" Width="25" Height="25"/>
+                    </Button>
+                </Grid>
+
+                <Grid  Background="Firebrick">
+                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="ClipboardFlow" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <Button x:Name="Converter" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Converter_Click">
+                        <TextBlock Text="Конвертер"  FontSize="15" Margin="34,15,-10,15" />
+                    </Button>
+                </Grid>
+                <Grid  Background="Firebrick">
+                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calculator" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <Button x:Name="Calculator" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}">
+                        <TextBlock Text="Калькулятор"  FontSize="15" Margin="48,15,-10,15" />
+                    </Button>
+                </Grid>
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

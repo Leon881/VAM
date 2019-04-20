@@ -4,36 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Multiplector.Tools"
-             mc:Ignorable="d" d:DesignWidth="400" Height="450">
-    <Grid Margin="0,0,0,-0.4">
-        <Menu HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="517" Background="WhiteSmoke">
-            <MenuItem Header="Инструкция"  FontSize="18" Height="30" />
-            <MenuItem  Header="О программе" FontSize="18"/>
-        </Menu>
-        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="136" Margin="39,84,0,0" Height="23" StaysOpenOnEdit="True" IsEditable="True" >
-            <ComboBoxItem Content="Масса"/>
-            <ComboBoxItem Content="Валюта"/>
+             mc:Ignorable="d" 
+              d:DesignHeight="500" d:DesignWidth="712">
+    <Grid Width="712" Height="500">
+
+        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Foreground="Black" Margin="39,84,0,0" Height="35" StaysOpenOnEdit="True" IsEditable="True" FontSize="16" >
+            <ComboBoxItem Content="Масса" />
+            <ComboBoxItem Content="Валюта" Background="White"/>
             <ComboBoxItem Content="Длина"/>
             <ComboBoxItem Content="Информация"/>
             <ComboBoxItem Content="Температура"/>
         </ComboBox>
-        <Label x:Name="Label1" Content="Выберите величину" Margin="39,51,236,374.8"/>
-        <Label x:Name="Label2" Content="Введите число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,131,0,0" Width="149"/>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" Margin="39,162,0,0"  PreviewTextInput="TextBox1_PrevievTextInput"/>
-        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Height="25" Margin="39,238,0,0" VerticalAlignment="Top" Width="130"/>
-        <ComboBox x:Name="ComboBox3" HorizontalAlignment="Left" Height="25" Margin="229,238,0,0" VerticalAlignment="Top" Width="130"/>
-        <Button x:Name="Button1" Content="Конвертировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="39,286,0,0" Height="36" Click="Button1_Click"/>
-        <Label x:Name="Label3" Content="Из чего" HorizontalAlignment="Left" Height="25" Margin="39,208,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="Label6" Content="Во что" HorizontalAlignment="Left" Height="25" Margin="229,208,0,0" VerticalAlignment="Top" Width="62"/>
-        <Label x:Name="Label4" Content="" HorizontalAlignment="Left" Height="31" Margin="39,346,0,0" VerticalAlignment="Top" Width="112"/>
-        <Label x:Name="Label5" Content="" HorizontalAlignment="Left" Height="30" Margin="39,377,0,0" VerticalAlignment="Top" Width="137"/>
-        <Button Content="Подтвердить" HorizontalAlignment="Left" Height="21" Margin="229,84,0,0" VerticalAlignment="Top" Width="88" Click="Button_Click">
+        <Label x:Name="Label1" Content="Выберите величину" Margin="36,46,814,419" FontSize="16" Foreground="#DD000000"/>
+        <Label x:Name="Label2" Content="Введите число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,131,0,0" Width="149" FontSize="16"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="39" TextWrapping="Wrap" VerticalAlignment="Top" Width="267" Margin="39,162,0,0"  PreviewTextInput="TextBox1_PrevievTextInput" Foreground="Black" FontSize="16"/>
+        <ComboBox x:Name="ComboBox2" HorizontalAlignment="Left" Height="35" Margin="42,271,0,0" VerticalAlignment="Top" Width="140" Foreground="Black" FontSize="16"/>
+        <ComboBox x:Name="ComboBox3" HorizontalAlignment="Left" Height="35" Margin="230,272,0,0" VerticalAlignment="Top" Width="140" Foreground="Black" FontSize="16"/>
+        <Button x:Name="Button1" Content="Конвертировать" Background="#FF2B75E0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="179" Margin="39,324,0,0" Height="43" Click="Button1_Click"/>
+        <Label x:Name="Label3" Content="Из чего" HorizontalAlignment="Left" Height="35" Margin="39,208,0,0" VerticalAlignment="Top" Width="100" FontSize="16"/>
+        <Label x:Name="Label6" Content="Во что" HorizontalAlignment="Left" Height="34" Margin="229,208,0,0" VerticalAlignment="Top" Width="62" FontSize="16"/>
+        <Label x:Name="Label4" Content="" HorizontalAlignment="Left" Height="31" Margin="38,388,0,0" VerticalAlignment="Top" Width="156" FontSize="16"/>
+        <Label x:Name="Label5" Content="" HorizontalAlignment="Left" Height="50" Margin="38,418,0,0" VerticalAlignment="Top" Width="191" FontSize="16"/>
+        <Button Content="Подтвердить" HorizontalAlignment="Left" Height="43" Background="#FF2B75E0" Margin="228,76,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click">
             <Button.ToolTip>
                 <ToolTip>
-                    Нажмите, чтобы подвердить выбор величины
+                    "Нажмите, чтобы подвердить выбор величины
                 </ToolTip>
             </Button.ToolTip>
         </Button>
-
+        <Label Content="Конвертер" HorizontalAlignment="Left" Margin="30,21,0,0" VerticalAlignment="Top" Height="35" Width="114" FontSize="20"/>
+        <Label x:Name="History" Content="История" HorizontalAlignment="Left" Margin="460,29,0,0" VerticalAlignment="Top" Height="349" Width="206" FontSize="16"/>
     </Grid>
 </UserControl>

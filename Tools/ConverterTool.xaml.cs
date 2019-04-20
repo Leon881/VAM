@@ -24,6 +24,7 @@ namespace Multiplector.Tools
         {
             InitializeComponent();
         }
+
         public static Dictionary<string, string[]> quantities = new Dictionary<string, string[]>
         {
             { "Масса", new[] { "Граммы", "Килограммы", "Центнеры", "Тонны" } },
@@ -93,7 +94,7 @@ namespace Multiplector.Tools
                     { 1 , 1.8, 1 }
                 }
             }
-        };      
+        };
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -145,6 +146,7 @@ namespace Multiplector.Tools
                 }
                 Label4.Content = "Результат";
                 Label5.Content = string.Format("{0} {1} = {2} {3}", TextBox1.Text, shortQuantitiesNames[ComboBox2.Text], result, shortQuantitiesNames[ComboBox3.Text]);
+                History.Content = History.Content + "\n" + Label5.Content;
             }
         }
         public static string GetConvertationResult(double value, Dictionary<string, double[,]> matrixDictionary, string quantity, int from, int to)

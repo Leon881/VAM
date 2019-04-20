@@ -26,18 +26,34 @@ namespace Multiplector
             InitializeComponent();
         }
 
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ButtonPopUp_Click(object sender, RoutedEventArgs e)
         {
-            var view = new CalculatorTool();
-            this.OutputView.Content = view;
+            Application.Current.Shutdown();
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void ButtonCloseMenu_Click(object sender, RoutedEventArgs e)
         {
-            //Привет я с вами!!!
-            //Саня, делай интерфейс
+            ButtonOpenMenu.Visibility = Visibility.Visible;
+            ButtonCloseMenu.Visibility = Visibility.Collapsed;
+        }
+
+        private void ButtonOpenMenu_Click(object sender, RoutedEventArgs e)
+        {
+            ButtonOpenMenu.Visibility = Visibility.Collapsed;
+            ButtonCloseMenu.Visibility = Visibility.Visible;
+        }
+
+        private void Converter_Click(object sender, RoutedEventArgs e)
+        {
+
             var view = new ConverterTool();
+            this.OutputView.Content = view;
+
+        }
+
+        private void AboutProgramm_Click(object sender, RoutedEventArgs e)
+        {
+            var view = new AboutProgramm();
             this.OutputView.Content = view;
         }
 
