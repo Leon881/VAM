@@ -35,7 +35,7 @@
         <Grid Height="70" VerticalAlignment="Top" Background="#FF2B75E0">
             <TextBlock Text="Multitool" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
-                <TextBlock Text ="Parameters" VerticalAlignment="Center" FontSize="18"/>
+                <TextBlock  VerticalAlignment="Center" FontSize="18"/>
                 <materialDesign:PopupBox Margin="05" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
                         <Button Content="О программе" Click="AboutProgramm_Click"/>
@@ -51,7 +51,7 @@
         <ContentPresenter x:Name="OutputView" Width="712" HorizontalAlignment="Right" Margin="0,71,-0.4,0.4" Height="500"/>
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="Firebrick">
             <StackPanel>
-                <Grid Height="150" Background="White">
+                <Grid Height="70" Background="White">
                     <Button x:Name="ButtonCloseMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
                         <materialDesign:PackIcon Foreground="#FF1F649C" Kind="ArrowLeft" Width="25" Height="25"/>
                     </Button>
@@ -70,6 +70,18 @@
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calculator" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
                     <Button x:Name="Calculator" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}">
                         <TextBlock Text="Калькулятор"  FontSize="15" Margin="48,15,-10,15" />
+                    </Button>
+                </Grid>
+                <Grid  Background="Firebrick">
+                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="TshirtCrew" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,10,0,12"/>
+                    <Button x:Name="Clothes" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" >
+                        <TextBlock Text="Одежда"  FontSize="15" Margin="15,15,-10,15" />
+                    </Button>
+                </Grid>
+                <Grid  Background="Firebrick">
+                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calendar" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <Button x:Name="Calendar"  Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" >
+                        <TextBlock Text="Календарь"  FontSize="15" Margin="34,15,-10,15" />
                     </Button>
                 </Grid>
             </StackPanel>

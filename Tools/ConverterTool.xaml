@@ -14,6 +14,7 @@
             <ComboBoxItem Content="Длина"/>
             <ComboBoxItem Content="Информация"/>
             <ComboBoxItem Content="Температура"/>
+            <ComboBoxItem Content="Время"/>
         </ComboBox>
         <Label x:Name="Label1" Content="Выберите величину" Margin="36,46,814,419" FontSize="16" Foreground="#DD000000"/>
         <Label x:Name="Label2" Content="Введите число" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="39,131,0,0" Width="149" FontSize="16"/>
@@ -28,11 +29,11 @@
         <Button Content="Подтвердить" HorizontalAlignment="Left" Height="43" Background="#FF2B75E0" Margin="228,76,0,0" VerticalAlignment="Top" Width="163" Click="Button_Click">
             <Button.ToolTip>
                 <ToolTip>
-                    "Нажмите, чтобы подвердить выбор величины
+                    Нажмите, чтобы подвердить выбор величины
                 </ToolTip>
             </Button.ToolTip>
         </Button>
         <Label Content="Конвертер" HorizontalAlignment="Left" Margin="30,21,0,0" VerticalAlignment="Top" Height="35" Width="114" FontSize="20"/>
-        <Label x:Name="History" Content="История" HorizontalAlignment="Left" Margin="460,29,0,0" VerticalAlignment="Top" Height="349" Width="206" FontSize="16"/>
+        <Label x:Name="History" Content="История:" HorizontalAlignment="Left" Margin="460,29,0,0" VerticalAlignment="Top" Height="349" Width="206" FontSize="18"/>
     </Grid>
 </UserControl>
