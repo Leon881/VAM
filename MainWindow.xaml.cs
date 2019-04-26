@@ -57,5 +57,10 @@ namespace Multiplector
             this.OutputView.Content = view;
         }
 
+        private void Calculator_Click(object sender, RoutedEventArgs e)
+        {
+            var view = new Calculator();
+            this.OutputView.Content = view;
+        }
     }
 }
