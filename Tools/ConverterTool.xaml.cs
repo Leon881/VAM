@@ -38,7 +38,7 @@ namespace Multiplector.Tools
         {
             { "Граммы", "г" }, { "Килограммы", "кг" }, { "Центнеры", "ц" }, { "Тонны", "т" }, {"Унция","oz"},{"Фунты","lb"},
             { "Миллиметры", "мм" }, { "Сантиметры", "см" }, { "Метры", "м" }, { "Километры", "км" },{ "Мили", "mi" },{ "Футы", "ft" },{ "Дюймы", "in" },
-            { "Рубли", "₽" }, { "Доллары", "$" }, { "Евро", "€" },
+            { "Рубли", "?" }, { "Доллары", "$" }, { "Евро", "€" },
             { "Биты", "бит" }, {"Байты", "байт" }, {"Килобайты", "кб" }, {"Мегабайты", "мб" }, {"Гигабайты", "гб" }, {"Терабайты", "тб" }, {"Петабайты", "пб" },
             {"градус Цельсия","°C"},{"градус Фаренгейта","°F"},{"Кельвин","K"},
             {"Секунды","сек." }, {"Минуты","мин."},{"Часы","ч."},{"Дни","д."},{"Недели","нед."},{"Годы","г."},
@@ -154,15 +154,11 @@ namespace Multiplector.Tools
                 string result;
                 var cBox2 = ComboBox2.SelectedIndex;
                 var cBox3 = ComboBox3.SelectedIndex;
-                switch (ComboBox1.Text)
+                if (ComboBox1.Text == "Температура")
                 {
-                    case "Температура":
-                        result = GetConvertationTemperature(System.Convert.ToDouble(TextBox1.Text), matrixDictionary, ComboBox1.Text, cBox2, cBox3);
-                        break;
-                    default:
-                        result = GetConvertationResult(System.Convert.ToDouble(TextBox1.Text), matrixDictionary, ComboBox1.Text, cBox2, cBox3);
-                        break;
+                    result = GetConvertationTemperature(System.Convert.ToDouble(TextBox1.Text), matrixDictionary, ComboBox1.Text, cBox2, cBox3);
                 }
+                else result = GetConvertationResult(System.Convert.ToDouble(TextBox1.Text), matrixDictionary, ComboBox1.Text, cBox2, cBox3);
                 Label4.Content = "Результат";
                 Label5.Content = string.Format("{0} {1} = {2} {3}", TextBox1.Text, shortQuantitiesNames[ComboBox2.Text], result, shortQuantitiesNames[ComboBox3.Text]);
                 History.Content = History.Content + "\n" + Label5.Content;
@@ -170,7 +166,7 @@ namespace Multiplector.Tools
         }
         public static string GetConvertationResult(double value, Dictionary<string, double[,]> matrixDictionary, string quantity, int from, int to)
         {
-            return Math.Round(value * matrixDictionary[quantity][from, to],6).ToString();
+            return Math.Round(value * matrixDictionary[quantity][from, to], 6).ToString();
         }
 
         public static string GetConvertationTemperature(double value, Dictionary<string, double[,]> matrixDictionary, string quantity, int from, int to)
@@ -191,6 +187,7 @@ namespace Multiplector.Tools
             }
 
         }
-       
+
     }
 }
+

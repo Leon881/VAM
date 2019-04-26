@@ -11,113 +11,113 @@
         <Grid Height="300" Margin="29,170,251,30">
             <StackPanel Width="108" HorizontalAlignment="Left" VerticalAlignment="Center">
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="C" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" >
+                    <Button x:Name="C" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="C_Click" >
                         <TextBlock Text="C"  FontSize="25" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Seven" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="4,0,4,2">
+                    <Button x:Name="Seven" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="4,0,4,2" Click="Seven_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number7" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Four" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="4,0,4,2">
+                    <Button x:Name="Four" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="4,0,4,2" Click="Four_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number4" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="One" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="One" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="One_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number1" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Bracket1" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2">
+                    <Button x:Name="Bracket1" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" Margin="4,2" Click="Bracket1_Click">
                         <TextBlock Text="("  FontSize="28" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
             </StackPanel>
             <StackPanel Width="108" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="108,0,0,0">
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Backspace" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" >
+                    <Button x:Name="Backspace" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="Backspace_Click" >
                         <materialDesign:PackIcon Foreground="Black" Kind="Backspace" Width="28" Height="28" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Eight" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Eight" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Eight_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number8" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Five" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Five" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Five_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number5" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Two" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Two" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Two_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number2" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Bracket2" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2">
+                    <Button x:Name="Bracket2" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="Bracket2_Click">
                         <TextBlock Text=")"  FontSize="28" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" Width="108" Margin="216,0,108,0">
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Point" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" >
+                    <Button x:Name="Point" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="Point_Click" >
                         <TextBlock Text=","  FontSize="28" Foreground="Black" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Nine" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Nine" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Nine_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number9" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Six" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Six" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Six_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number6" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Three" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Three" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Three_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number3" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Zero" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2">
+                    <Button x:Name="Zero" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" Margin="4,2" Click="Zero_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Number0" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
             </StackPanel>
             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Width="108" Height="300" Margin="324,0,0,0">
                 <Grid Height="60" Width="108" HorizontalAlignment="Center" VerticalAlignment="Top">
-                    <Button x:Name="Devision" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" >
+                    <Button x:Name="Devision" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="Devision_Click" >
                         <materialDesign:PackIcon Foreground="Black" Kind="Division" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Multiplication" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Multiplication" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Multiplication_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Multiplication" Width="30" Height="30" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Minus" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2">
+                    <Button x:Name="Minus" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,0,4,2" Click="Minus_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Minus" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Plus" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="Plus" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Plus_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Plus" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
                 <Grid Height="60" Width="108" HorizontalAlignment="Left" VerticalAlignment="Top">
-                    <Button x:Name="Equality" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2">
+                    <Button x:Name="Equality" Width="100" Height="55" Background="{x:Null}" BorderBrush="#FF2B75E0" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="4,2" Click="Equality_Click">
                         <materialDesign:PackIcon Foreground="Black" Kind="Equal" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     </Button>
                 </Grid>
             </StackPanel>
         </Grid>
-        <TextBox x:Name="Answer"  HorizontalAlignment="Left" Height="23" Margin="34,76,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="419"/>
+        <TextBox x:Name="Answer" HorizontalAlignment="Left" Height="84" Margin="29,26,0,0" TextWrapping="Wrap" Foreground="Black"  VerticalAlignment="Top" Width="432" PreviewTextInput="Answer_PrevievTextInput" Background="{x:Null}" BorderBrush="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
     </Grid>
-</UserControl>
+    </UserControl>
