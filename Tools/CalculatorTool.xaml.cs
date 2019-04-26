@@ -18,11 +18,12 @@ namespace Multiplector.Tools
     /// <summary>
     /// Логика взаимодействия для UserControl1.xaml
     /// </summary>
-    public partial class Calculator : UserControl
+    public partial class CalculatorTool : UserControl
     {
-        public Calculator()
+        public CalculatorTool()
         {
             InitializeComponent();
         }
+     
     }
 }

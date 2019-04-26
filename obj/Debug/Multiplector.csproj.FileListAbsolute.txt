@@ -85,5 +85,5 @@ C:\project\obj\Debug\Multiplector.csproj.GenerateResource.Cache
 C:\project\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
 C:\project\obj\Debug\Multiplector.exe
 C:\project\obj\Debug\Multiplector.pdb
-D:\GitHubProject\obj\Debug\Tools\Calculator.g.cs
-D:\GitHubProject\obj\Debug\Tools\Calculator.baml
+D:\GitHubProject\obj\Debug\Tools\CalculatorTool.g.cs
+D:\GitHubProject\obj\Debug\Tools\CalculatorTool.baml

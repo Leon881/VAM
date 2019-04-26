@@ -13,11 +13,17 @@
                 <EasingDoubleKeyFrame KeyTime="0" Value="60"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="160"/>
             </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Radius)" Storyboard.TargetName="PresenterEffect">
+                <LinearDoubleKeyFrame Value="10" KeyTime="0:0:0.3"></LinearDoubleKeyFrame>
+            </DoubleAnimationUsingKeyFrames>
         </Storyboard>
         <Storyboard x:Key="MenuClose">
             <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
                 <EasingDoubleKeyFrame KeyTime="0" Value="160"/>
                 <EasingDoubleKeyFrame KeyTime="0:0:0.3" Value="60"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Radius)" Storyboard.TargetName="PresenterEffect">
+                <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0.3"></LinearDoubleKeyFrame>
             </DoubleAnimationUsingKeyFrames>
         </Storyboard>
     </Window.Resources>
@@ -48,26 +54,35 @@
 
             </StackPanel>
         </Grid>
-        <ContentPresenter x:Name="OutputView" Width="712" HorizontalAlignment="Right" Margin="0,71,-0.4,0.4" Height="500"/>
+
+        <Grid x:Name="ContentPresenter"  Margin="60,70,0,0" HorizontalAlignment="Left">
+            <ContentPresenter x:Name="OutputView" Margin="0,0,0,0"/>
+            <Grid.Effect>
+                <BlurEffect x:Name="PresenterEffect" Radius="0"/>
+            </Grid.Effect>
+        </Grid>
+
         <Grid x:Name="GridMenu" Width="60" HorizontalAlignment="Left" Background="Firebrick">
             <StackPanel>
                 <Grid Height="70" Background="White">
                     <Button x:Name="ButtonCloseMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Visibility="Collapsed" Click="ButtonCloseMenu_Click">
                         <materialDesign:PackIcon Foreground="#FF1F649C" Kind="ArrowLeft" Width="25" Height="25"/>
                     </Button>
-                    <Button x:Name="ButtonOpenMenu" Width="60" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
+                    <Button x:Name="ButtonOpenMenu" Width="60" Height="70" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" HorizontalAlignment="Right" Click="ButtonOpenMenu_Click">
                         <materialDesign:PackIcon Foreground="#FF2B75E0" Kind="Menu" Width="25" Height="25"/>
                     </Button>
                 </Grid>
 
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="ClipboardFlow" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <Grid x:Name="ConverterSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"></Grid>
                     <Button x:Name="Converter" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Converter_Click">
                         <TextBlock Text="Конвертер"  FontSize="15" Margin="34,15,-10,15" />
                     </Button>
                 </Grid>
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calculator" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <Grid x:Name="CalculatorSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"></Grid>
                     <Button x:Name="Calculator" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calculator_Click">
                         <TextBlock Text="Калькулятор"  FontSize="15" Margin="48,15,-10,15" />
                     </Button>
@@ -80,9 +95,11 @@
                 </Grid>
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calendar" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    
                     <Button x:Name="Calendar"  Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" >
                         <TextBlock Text="Календарь"  FontSize="15" Margin="34,15,-10,15" />
                     </Button>
+                    
                 </Grid>
             </StackPanel>
         </Grid>

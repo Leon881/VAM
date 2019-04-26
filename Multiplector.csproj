@@ -67,8 +67,8 @@
     <Compile Include="Tools\ConverterTool.xaml.cs">
       <DependentUpon>ConverterTool.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tools\Calculator.xaml.cs">
-      <DependentUpon>Calculator.xaml</DependentUpon>
+    <Compile Include="Tools\CalculatorTool.xaml.cs">
+      <DependentUpon>CalculatorTool.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -90,7 +90,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tools\Calculator.xaml">
+    <Page Include="Tools\CalculatorTool.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
