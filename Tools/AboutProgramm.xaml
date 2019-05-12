@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="Multiplector.Tools.AboutProgramm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Multiplector.Tools"   
+              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"  
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="712">
+    <Grid>
+        <Label Content="Приложение Multitool:&#xD;&#xA;&#xD;&#xA;Разработано студентами Уральского Федерального Университета&#xD;&#xA;Группа  РИ-270017&#xD;&#xA;&#xD;&#xA;Коротких Вадимом Юрьевичем&#xD;&#xA;Бутузовым Александром Витальевичем&#xD;&#xA;Степановым Максимом Андреевичем" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="257" Width="682" FontSize="22"/>
+        <Image Source="D:\GitHubProject\image\UrFULogo_Full_Russian.png" HorizontalAlignment="Left" Height="196" Margin="102,275,0,0" VerticalAlignment="Top" Width="478"/>
+    </Grid>
+</UserControl>

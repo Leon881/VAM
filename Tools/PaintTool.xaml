@@ -1,0 +1,117 @@
+﻿<UserControl x:Class="Multiplector.Tools.PaintTool"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Multiplector.Tools"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"  
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="712">
+    <Grid Width="712" Height="500">
+        <Grid x:Name="PaintMenu"  Width="712" Height="70" VerticalAlignment="Top" Background="WhiteSmoke">
+            <TabPanel>
+                <StackPanel Height="70" >
+                    <TabPanel Width="120" Height="55">
+                        <Grid>
+                            <materialDesign:PackIcon Foreground="Black" Kind="FilePlus" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button x:Name="Open" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" Click="Open_Click" />
+                        </Grid>
+                        <Grid>
+                            <materialDesign:PackIcon Foreground="Black" Kind="FolderDownload" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button x:Name="Save" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Click="Save_Click"/>
+                        </Grid>
+                    </TabPanel>
+                    <TextBlock  Foreground="Gray"   Text="Буфер обмена"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                </StackPanel>
+                <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+                <StackPanel Height="70">
+                    <TabPanel Width="180" Height="55">
+                        <Grid>
+                            <materialDesign:PackIcon Foreground="Black" Kind="Pencil" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button x:Name="Pen" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" Click="Pen_Click"  />
+                        </Grid>
+                        <Grid>
+                            <materialDesign:PackIcon Foreground="Black" Kind="Eraser" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button x:Name="Eraser" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Click="Eraser_Click"/>
+                        </Grid>
+                        <Grid>
+                            <materialDesign:PackIcon Foreground="Black" Kind="TrashCan" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            <Button x:Name="Cleaning" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Click="Cleaning_Click"/>
+                        </Grid>
+                    </TabPanel>
+                    <TextBlock  Foreground="Gray"   Text="Инструменты"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                </StackPanel>
+                <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+                <StackPanel Height="70" Cursor="Hand">
+                    <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
+                        <ComboBox.Background>
+                            <ImageBrush ImageSource="C:\project\image\Thicknesses.png" Stretch="UniformToFill"/>
+                        </ComboBox.Background>
+                        <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="1 px" Margin="0,0,0.4,0" >
+                            <ComboBoxItem.Background>
+                                <ImageBrush ImageSource="C:\project\image\Thickness1.png"/>
+                            </ComboBoxItem.Background>
+                        </ComboBoxItem>
+                        <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="3 px" Margin="0,0,0.4,0">
+                            <ComboBoxItem.Background>
+                                <ImageBrush ImageSource="C:\project\image\Thickness3.png"/>
+                            </ComboBoxItem.Background>
+                        </ComboBoxItem>
+                        <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="5 px" Margin="0,0,0.4,0">
+                            <ComboBoxItem.Background>
+                                <ImageBrush ImageSource="C:\project\image\Thickness5.png"/>
+                            </ComboBoxItem.Background>
+                        </ComboBoxItem>
+                        <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="7 px" Margin="0,0,0.4,0">
+                            <ComboBoxItem.Background>
+                                <ImageBrush ImageSource="C:\project\image\Thickness7.png"/>
+                            </ComboBoxItem.Background>
+                        </ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock  Foreground="Gray"   Text="Толщина"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                </StackPanel>
+                <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+                <StackPanel Height="70">
+                    <TabPanel Width="182" Height="55">
+                        <StackPanel Width="26" Height="55">
+                            <Button x:Name="BlackColor" BorderBrush="{x:Null}" Height="25" Width="25" Background="Black" VerticalAlignment="Top" Click="BlackColor_Click" />
+                            <Button x:Name="WhiteColor" BorderBrush="{x:Null}" Height="25" Width="25" Background="White" VerticalAlignment="Bottom" Click="WhiteColor_Click" />
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="GrayLight" BorderBrush="{x:Null}" Height="25" Width="25" Background="LightGray" VerticalAlignment="Top" Click="GrayLight_Click" />
+                            <Button x:Name="GrayDark" BorderBrush="{x:Null}" Height="25" Width="25" Background="DarkGray" VerticalAlignment="Stretch" Click="GrayDark_Click"/>
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="Brown" BorderBrush="{x:Null}" Height="25" Width="25" Background="Brown" VerticalAlignment="Top" Click="Brown_Click" />
+                            <Button x:Name="RosyBrown" BorderBrush="{x:Null}" Height="25" Width="25" Background="RosyBrown" VerticalAlignment="Stretch" Click="RosyBrown_Click"/>
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="Red" BorderBrush="{x:Null}" Height="25" Width="25" Background="Red" VerticalAlignment="Top" Click="Red_Click"/>
+                            <Button x:Name="Pink" BorderBrush="{x:Null}" Height="25" Width="25" Background="Pink" VerticalAlignment="Stretch" Click="Pink_Click" />
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="Orange" BorderBrush="{x:Null}" Height="25" Width="25" Background="Orange" VerticalAlignment="Top" Click="Orange_Click" />
+                            <Button x:Name="Yellow" BorderBrush="{x:Null}" Height="25" Width="25" Background="Yellow" VerticalAlignment="Stretch" Click="Yellow_Click" />
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="Green" BorderBrush="{x:Null}" Height="25" Width="25" Background="Green" VerticalAlignment="Top" Click="Green_Click" />
+                            <Button x:Name="LightGreen" BorderBrush="{x:Null}" Height="25" Width="25" Background="GreenYellow" VerticalAlignment="Stretch" Click="LightGreen_Click" />
+                        </StackPanel>
+                        <StackPanel Width="26">
+                            <Button x:Name="Blue" BorderBrush="{x:Null}" Height="25" Width="25" Background="Blue" VerticalAlignment="Top" Click="Blue_Click"/>
+                            <Button x:Name="LightBlue" BorderBrush="{x:Null}" Height="25" Width="25" Background="DarkBlue" VerticalAlignment="Stretch" Click="LightBlue_Click"/>
+                        </StackPanel>
+                    </TabPanel>
+                    <TextBlock  Foreground="Gray"   Text="Цвета"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                </StackPanel>
+                <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+            </TabPanel>
+            
+        </Grid>
+
+        <InkCanvas x:Name="PaintCanvas"  Width="712" Height="430" VerticalAlignment="Bottom">
+
+        </InkCanvas>
+
+    </Grid>
+</UserControl>
