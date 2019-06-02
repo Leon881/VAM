@@ -1,0 +1,17 @@
+﻿<Window x:Class="Autorization_form.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autorization_form"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="350" WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="20">
+        <Label Content="Регистрация" FontSize="25" HorizontalAlignment="Center"/>
+        <Label Content="Логин" FontSize="15" HorizontalAlignment="Center"/>
+        <TextBox Name="NewUsername" FontSize="20" Margin="20 5" KeyUp="NewUsername_KeyUp"/>
+        <Label Content="Пароль" FontSize="15" HorizontalAlignment="Center"/>
+        <PasswordBox Name="NewPassword" FontSize="20" Margin="20 5" KeyUp="NewPassword_KeyUp"/>
+        <Button Name="Registrate" Content="Готово" FontSize="20px" Width="200px" Margin="0 5px" Click="Registrate_Click"/>
+    </StackPanel>
+</Window>

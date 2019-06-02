@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/urfulogo_full_russian.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autorization/registration.xml")]
 
 

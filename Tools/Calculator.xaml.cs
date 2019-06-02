@@ -30,6 +30,10 @@ namespace Multiplector.Tools
         {
             return "Выражение не может заканчиваться знаком";
         }
+        public string Message4()
+        {
+            return "Выражение не может заканчиваться знаком";
+        }
         public string EasterEgg()
         {
             return "Откуда у вас этот номер ?";
@@ -111,7 +115,7 @@ namespace Multiplector.Tools
         private void Backspace_Click(object sender, RoutedEventArgs e)
         {
             if (Answer.Text != string.Empty)
-            Answer.Text = Answer.Text.Remove(Answer.Text.Length - 1, 1);
+                Answer.Text = Answer.Text.Remove(Answer.Text.Length - 1, 1);
         }
 
         private void Point_Click(object sender, RoutedEventArgs e)
@@ -155,7 +159,7 @@ namespace Multiplector.Tools
         {
             if (Answer.Text.Contains("="))
             {
-               string [] arr =  Answer.Text.Split('=');
+                string[] arr = Answer.Text.Split('=');
                 Answer.Text = arr[1];
             }
             Answer.Text = Answer.Text + "-";
@@ -190,11 +194,22 @@ namespace Multiplector.Tools
 
         private void Equality_Click(object sender, RoutedEventArgs e)
         {
-            if (Answer.Text.Contains("=")) return;
-            var error = new Messages();
-            if(Answer.Text=="89026057747" || Answer.Text=="89193743013" || Answer.Text == "89514772745")
+            var checkForBracket = 0;
+            foreach (var el in Answer.Text)
             {
-               Answer.Text= error.EasterEgg();
+                if (Char.IsDigit(el))
+                    checkForBracket++;
+            }
+            if (Answer.Text.Contains("=")) return;
+            if (checkForBracket == 0 && Answer.Text.Contains("(") && Answer.Text.Contains(")"))
+            {
+                Answer.Text = Answer.Text + "=" + "0";
+                return;
+            }
+            var error = new Messages();
+            if (Answer.Text == "89026057747" || Answer.Text == "89193743013" || Answer.Text == "89514772745")
+            {
+                Answer.Text = error.EasterEgg();
                 DispatcherTimer tm = new DispatcherTimer
                 {
                     Interval = new TimeSpan(0, 0, 2)
@@ -223,12 +238,12 @@ namespace Multiplector.Tools
             {
                 if (Answer.Text[i] == '(' || Answer.Text[i] == ')')
                     check++;
-                if (Answer.Text[i] == '0' && i!=0 &&  Answer.Text[i - 1] == '/')
+                if (Answer.Text[i] == '0' && i != 0 && Answer.Text[i - 1] == '/')
                     checkForZero = true;
-                if (!Char.IsDigit(Answer.Text[Answer.Text.Length - 1]) && Answer.Text[Answer.Text.Length - 1]!='(' && Answer.Text[Answer.Text.Length - 1] != ')')
+                if (!Char.IsDigit(Answer.Text[Answer.Text.Length - 1]) && Answer.Text[Answer.Text.Length - 1] != '(' && Answer.Text[Answer.Text.Length - 1] != ')')
                     endCheck = true;
-            }        
-            if (check % 2 != 0 || checkForZero==true || endCheck==true)
+            }
+            if (check % 2 != 0 || checkForZero == true || endCheck == true)
             {
                 Buttons1.IsEnabled = false;
                 Buttons2.IsEnabled = false;
@@ -242,7 +257,7 @@ namespace Multiplector.Tools
                 else if (checkForZero == true)
                     Answer.Text = error.Message2();
                 else if (endCheck == true)
-                    Answer.Text = error.Message3() ;
+                    Answer.Text = error.Message3();
                 DispatcherTimer tm = new DispatcherTimer
                 {
                     Interval = new TimeSpan(0, 0, 2)

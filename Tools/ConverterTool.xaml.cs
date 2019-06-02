@@ -39,8 +39,8 @@ namespace Multiplector.Tools
         };
         public static Dictionary<string, string> shortQuantitiesNames = new Dictionary<string, string>
         {
-            { "Граммы", "г" }, { "Килограммы", "кг" }, { "Центнеры", "ц" }, { "Тонны", "т" }, {"Унция","oz"},{"Фунты","lb"},
-            { "Миллиметры", "мм" }, { "Сантиметры", "см" }, { "Метры", "м" }, { "Километры", "км" },{ "Мили", "mi" },{ "Футы", "ft" },{ "Дюймы", "in" },
+            { "Граммы", "г" }, { "Килограммы", "кг" }, { "Центнеры", "ц" }, { "Тонны", "т" }, {"Унция","ун."},{"Фунты","ф."},
+            { "Миллиметры", "мм" }, { "Сантиметры", "см" }, { "Метры", "м" }, { "Километры", "км" },{ "Мили", "м." },{ "Футы", "ф." },{ "Дюймы", "д." },
             { "Рубли", "₽" }, { "Доллары", "$" }, { "Евро", "€" },
             { "Биты", "бит" }, {"Байты", "байт" }, {"Килобайты", "кб" }, {"Мегабайты", "мб" }, {"Гигабайты", "гб" }, {"Терабайты", "тб" }, {"Петабайты", "пб" },
             {"градус Цельсия","°C"},{"градус Фаренгейта","°F"},{"Кельвин","K"},
@@ -118,7 +118,7 @@ namespace Multiplector.Tools
             }
         };
 
-       
+
         private void TextBox1_PrevievTextInput(object sender, TextCompositionEventArgs e)
         {
             if (!(Char.IsDigit(e.Text, 0) || (e.Text == ",")
@@ -166,7 +166,7 @@ namespace Multiplector.Tools
                 else result = GetConvertationResult(System.Convert.ToDouble(TextBox1.Text), matrixDictionary, ComboBox1.Text, cBox2, cBox3);
                 Label4.Content = "Результат";
                 Answer.Text = string.Format("{0} {1} = {2} {3}", TextBox1.Text, shortQuantitiesNames[ComboBox2.Text], result, shortQuantitiesNames[ComboBox3.Text]);
-                History.Text = Answer.Text + "\n" + History.Text ;
+                History.Text = Answer.Text + "\n" + History.Text;
             }
         }
         public static string GetConvertationResult(double value, Dictionary<string, double[,]> matrixDictionary, string quantity, int from, int to)
@@ -195,12 +195,12 @@ namespace Multiplector.Tools
 
         private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-                ComboBox2.Items.Clear();
-                ComboBox3.Items.Clear();
-                ComboBox2.Text = "";
-                ComboBox3.Text = "";
-                Answer.Text = string.Empty;
-            string text="";
+            ComboBox2.Items.Clear();
+            ComboBox3.Items.Clear();
+            ComboBox2.Text = "";
+            ComboBox3.Text = "";
+            Answer.Text = string.Empty;
+            var text = "";
             if (ComboBox1.SelectedIndex == 0)
             {
                 text = "Масса";
@@ -227,11 +227,11 @@ namespace Multiplector.Tools
             }
             if (text == "") return;
             foreach (var str in quantities[text])
-                {
-                    ComboBox2.Items.Add(str);
-                    ComboBox3.Items.Add(str);
-                }
-                Label4.Content = string.Empty;   
+            {
+                ComboBox2.Items.Add(str);
+                ComboBox3.Items.Add(str);
+            }
+            Label4.Content = string.Empty;
         }
 
         private void HistorySenttings_Click(object sender, RoutedEventArgs e)

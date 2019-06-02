@@ -40,6 +40,9 @@
     <Grid Background="WhiteSmoke">
         <Grid Height="70" VerticalAlignment="Top" Background="#FF2B75E0">
             <TextBlock x:Name="title34" Text="Multitool" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
+            <Button x:Name="Autorization" Content="Вход" Width="70" Margin="500,0,0,0" Click="Autorization_Click"></Button>
+            <TextBlock x:Name="UserLogin" Width="70" Height="17" Margin="500,0,0,26" Foreground="White" FontWeight="Bold"  Visibility="Hidden"  FontSize="15" TextAlignment="Center" TextWrapping="Wrap"/>
+            <Button x:Name="SignOut" Content="Выйти" Width="73" Height="25"  FontSize="14" Margin="500,24,0,0"  Visibility="Hidden"  Click="SignOut_Click"/>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock  VerticalAlignment="Center" FontSize="18"/>
                 <materialDesign:PopupBox Margin="05" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
@@ -47,6 +50,7 @@
                         <Button Content="О программе" Click="AboutProgramm_Click"/>
                         <Button Content="Настройки"/>
                         <Button Content="Инструкция"/>
+                        <Button x:Name="ExcelExport" Content="Экпортировать БД в Excel" Visibility="Hidden"  Click="ExcelExport_Click"/>
                         <Separator/>
                         <Button x:Name="ButtonPopUp" Content="Выход" Click="ButtonPopUp_Click"/>
                     </StackPanel>
@@ -82,7 +86,7 @@
                     </Button>
                 </Grid>
                 <Grid  Background="Firebrick">
-                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calculator" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
+                    <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="CalculatorVariant" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
                     <Grid x:Name="CalculatorSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
                     <Button x:Name="Calculator" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calculator_Click">
                         <TextBlock Text="Калькулятор"  FontSize="15" Margin="48,15,-10,15" />
@@ -90,7 +94,8 @@
                 </Grid>
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="TshirtCrew" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,10,0,12"/>
-                    <Button x:Name="Clothes" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" >
+                    <Grid x:Name="ClothesSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
+                    <Button x:Name="Clothes" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  Click="Clothes_Click" >
                         <TextBlock Text="Одежда"  FontSize="15" Margin="15,15,-10,15" />
                     </Button>
                 </Grid>

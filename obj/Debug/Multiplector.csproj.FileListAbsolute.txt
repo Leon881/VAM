@@ -97,3 +97,238 @@ C:\project\obj\Debug\Tools\CalendarTool.g.cs
 C:\project\obj\Debug\Tools\PaintTool.g.cs
 C:\project\obj\Debug\Tools\CalendarTool.baml
 C:\project\obj\Debug\Tools\PaintTool.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Multiplector.exe.config
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Multiplector.exe
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Multiplector.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Dapper.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\EntityFramework.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Dapper.xml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\EntityFramework.xml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\System.Data.SQLite.xml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.csprojAssemblyReference.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\MainWindow.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\CalendarTool.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\Calculator.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\PaintTool.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\App.g.cs
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\App.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\MainWindow.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\CalendarTool.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\ConverterTool.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\Calculator.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Tools\PaintTool.baml
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.g.resources
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.csproj.GenerateResource.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.csproj.CopyComplete
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.exe
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\obj\Debug\Multiplector.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Users.db
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Autorization from.exe
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Autorization from.pdb
+C:\Users\Александр Бутузов\Desktop\Практика 2\GitHubProjectTest\bin\Debug\Autorization from.exe.config
+E:\GitHubProjectTest\bin\Debug\Multiplector.exe.config
+E:\GitHubProjectTest\bin\Debug\Multiplector.exe
+E:\GitHubProjectTest\bin\Debug\Multiplector.pdb
+E:\GitHubProjectTest\bin\Debug\Dapper.dll
+E:\GitHubProjectTest\bin\Debug\EntityFramework.dll
+E:\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.dll
+E:\GitHubProjectTest\bin\Debug\MaterialDesignColors.dll
+E:\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll
+E:\GitHubProjectTest\bin\Debug\System.Data.SQLite.EF6.dll
+E:\GitHubProjectTest\bin\Debug\System.Data.SQLite.Linq.dll
+E:\GitHubProjectTest\bin\Debug\Dapper.xml
+E:\GitHubProjectTest\bin\Debug\EntityFramework.xml
+E:\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.xml
+E:\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\GitHubProjectTest\bin\Debug\System.Data.SQLite.xml
+E:\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll.config
+E:\GitHubProjectTest\obj\Debug\Multiplector.csprojAssemblyReference.cache
+E:\GitHubProjectTest\obj\Debug\MainWindow.g.cs
+E:\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.g.cs
+E:\GitHubProjectTest\obj\Debug\Tools\CalendarTool.g.cs
+E:\GitHubProjectTest\obj\Debug\Tools\ConverterTool.g.cs
+E:\GitHubProjectTest\obj\Debug\Tools\Calculator.g.cs
+E:\GitHubProjectTest\obj\Debug\Tools\PaintTool.g.cs
+E:\GitHubProjectTest\obj\Debug\App.g.cs
+E:\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.cache
+E:\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.lref
+E:\GitHubProjectTest\obj\Debug\App.baml
+E:\GitHubProjectTest\obj\Debug\MainWindow.baml
+E:\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.baml
+E:\GitHubProjectTest\obj\Debug\Tools\CalendarTool.baml
+E:\GitHubProjectTest\obj\Debug\Tools\ConverterTool.baml
+E:\GitHubProjectTest\obj\Debug\Tools\Calculator.baml
+E:\GitHubProjectTest\obj\Debug\Tools\PaintTool.baml
+E:\GitHubProjectTest\obj\Debug\Multiplector.g.resources
+E:\GitHubProjectTest\obj\Debug\Multiplector.Properties.Resources.resources
+E:\GitHubProjectTest\obj\Debug\Multiplector.csproj.GenerateResource.cache
+E:\GitHubProjectTest\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+E:\GitHubProjectTest\obj\Debug\Multiplector.csproj.CopyComplete
+E:\GitHubProjectTest\obj\Debug\Multiplector.exe
+E:\GitHubProjectTest\obj\Debug\Multiplector.pdb
+E:\GitHubProjectTest\obj\Debug\Autorization\MainWindow.g.cs
+E:\GitHubProjectTest\obj\Debug\Autorization\Registration.g.cs
+E:\GitHubProjectTest\bin\Debug\Autorization\Users.db
+E:\GitHubProjectTest\obj\Debug\Autorization\MainWindow.baml
+E:\GitHubProjectTest\obj\Debug\Autorization\Registration.baml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Autorization\Users.db
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Multiplector.exe.config
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Multiplector.exe
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Multiplector.pdb
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Dapper.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\EntityFramework.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\MaterialDesignColors.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\Dapper.xml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\EntityFramework.xml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\System.Data.SQLite.xml
+C:\Users\Max\Desktop\GitHubProjectTest\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.csprojAssemblyReference.cache
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Autorization\MainWindow.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Autorization\Registration.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\MainWindow.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\CalendarTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\Calculator.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\PaintTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\App.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\App.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Autorization\MainWindow.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Autorization\Registration.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\MainWindow.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\AboutProgramm.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\CalendarTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\ConverterTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\Calculator.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Tools\PaintTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.g.resources
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.csproj.GenerateResource.cache
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.csproj.CopyComplete
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.exe
+C:\Users\Max\Desktop\GitHubProjectTest\obj\Debug\Multiplector.pdb
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Autorization\Users.db
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Multiplector.exe.config
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Multiplector.exe
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Multiplector.pdb
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Dapper.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\EntityFramework.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\MaterialDesignColors.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\System.Data.SQLite.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\Dapper.xml
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\EntityFramework.xml
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\System.Data.SQLite.xml
+C:\Users\Max\Desktop\GitHubProjectTest v2\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.csprojAssemblyReference.cache
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Autorization\MainWindow.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Autorization\Registration.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\MainWindow.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\AboutProgramm.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\CalendarTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\Calculator.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\PaintTool.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\App.g.cs
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\App.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Autorization\MainWindow.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Autorization\Registration.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\MainWindow.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\AboutProgramm.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\CalendarTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\ConverterTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\Calculator.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Tools\PaintTool.baml
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.g.resources
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.csproj.GenerateResource.cache
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.csproj.CopyComplete
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.exe
+C:\Users\Max\Desktop\GitHubProjectTest v2\obj\Debug\Multiplector.pdb
+C:\Users\ПК\Desktop\тест\bin\Debug\Autorization\Users.db
+C:\Users\ПК\Desktop\тест\bin\Debug\Multiplector.exe.config
+C:\Users\ПК\Desktop\тест\bin\Debug\Multiplector.exe
+C:\Users\ПК\Desktop\тест\bin\Debug\Multiplector.pdb
+C:\Users\ПК\Desktop\тест\bin\Debug\Dapper.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\EntityFramework.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\MaterialDesignColors.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\System.Data.SQLite.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\ПК\Desktop\тест\bin\Debug\Dapper.xml
+C:\Users\ПК\Desktop\тест\bin\Debug\EntityFramework.xml
+C:\Users\ПК\Desktop\тест\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ПК\Desktop\тест\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ПК\Desktop\тест\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ПК\Desktop\тест\bin\Debug\System.Data.SQLite.xml
+C:\Users\ПК\Desktop\тест\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.csprojResolveAssemblyReference.cache
+C:\Users\ПК\Desktop\тест\obj\Debug\Autorization\MainWindow.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Autorization\Registration.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\MainWindow.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\AboutProgramm.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\CalendarTool.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\ConverterTool.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\Calculator.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\PaintTool.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\App.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector_MarkupCompile.cache
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector_MarkupCompile.lref
+C:\Users\ПК\Desktop\тест\obj\Debug\App.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Autorization\MainWindow.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Autorization\Registration.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\MainWindow.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\AboutProgramm.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\CalendarTool.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\ConverterTool.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\Calculator.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\PaintTool.baml
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.g.resources
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.Properties.Resources.resources
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.csproj.GenerateResource.Cache
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.csproj.CoreCompileInputs.cache
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.exe
+C:\Users\ПК\Desktop\тест\obj\Debug\Multiplector.pdb
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\ClothesTool.g.cs
+C:\Users\ПК\Desktop\тест\obj\Debug\Tools\ClothesTool.baml

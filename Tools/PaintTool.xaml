@@ -43,7 +43,7 @@
                 </StackPanel>
                 <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
                 <StackPanel Height="70" Cursor="Hand">
-                    <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="65" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
+                    <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
                         <ComboBox.Background>
                             <ImageBrush ImageSource="C:\project\image\Thicknesses.png" Stretch="UniformToFill"/>
                         </ComboBox.Background>

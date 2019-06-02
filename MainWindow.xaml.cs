@@ -16,6 +16,8 @@ using System.Windows.Shapes;
 using System.Windows.Media.Animation;
 using System.Windows.Media.Effects;
 using System.Windows.Threading;
+using Autorization_form;
+using Multiplector.Autorization;
 
 namespace Multiplector
 {
@@ -29,7 +31,8 @@ namespace Multiplector
         CalculatorTool view2 = new CalculatorTool();
         CalendarTool view4 = new CalendarTool();
         PaintTool view5 = new PaintTool();
-           
+        ClothesTool view6 = new ClothesTool();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -89,10 +92,21 @@ namespace Multiplector
 
         private void Paint_Click(object sender, RoutedEventArgs e)
         {
-            if (NowOpen == 5) return;           
+            if (NowOpen == 5) return;
             else
             {
                 NowOpen = 5;
+                WhiteLineChange();
+                Startanimation();
+            }
+        }
+
+        private void Clothes_Click(object sender, RoutedEventArgs e)
+        {
+            if (NowOpen == 6) return;
+            else
+            {
+                NowOpen = 6;
                 WhiteLineChange();
                 Startanimation();
             }
@@ -132,7 +146,11 @@ namespace Multiplector
             if (NowOpen == 5)
             {
                 this.OutputView.Content = view5;
-            }            
+            }
+            if (NowOpen == 6)
+            {
+                this.OutputView.Content = view6;
+            }
             DoubleAnimation animation = new DoubleAnimation();
             animation.From = 0;
             animation.To = 712;
@@ -146,10 +164,12 @@ namespace Multiplector
             CalculatorSelect.Background = new SolidColorBrush(Colors.Firebrick);
             ConverterSelect.Background = new SolidColorBrush(Colors.Firebrick);
             CalendarSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            ClothesSelect.Background = new SolidColorBrush(Colors.Firebrick);
             if (NowOpen==1) ConverterSelect.Background = new SolidColorBrush(Colors.White);
             if (NowOpen == 2) CalculatorSelect.Background = new SolidColorBrush(Colors.White);
             if (NowOpen == 4) CalendarSelect.Background = new SolidColorBrush(Colors.White);
             if (NowOpen == 5) PaintSelect.Background = new SolidColorBrush(Colors.White);
+            if (NowOpen == 6) ClothesSelect.Background = new SolidColorBrush(Colors.White);
         }
 
         private void StartClock()
@@ -169,6 +189,27 @@ namespace Multiplector
                     Clock.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd MMMM yyyy");
             };
             tm.Start();
+        }
+
+        private void Autorization_Click(object sender, RoutedEventArgs e)
+        {
+            var atrz = new Autorization_form.MainWindow();
+            atrz.Owner = this;
+            atrz.Show();
+        }
+
+        private void SignOut_Click(object sender, RoutedEventArgs e)
+        {
+            UserLogin.SetValue(TextBlock.TextProperty, null);
+            UserLogin.Visibility = Visibility.Hidden;
+            SignOut.Visibility = Visibility.Hidden;
+            Autorization.Visibility = Visibility.Visible;
+        }
+
+        private void ExcelExport_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Пользователи экспортированы!");
+            ExcelSaver.AddUsersToSheet();
         }
     }
 }
