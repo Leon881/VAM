@@ -88,21 +88,21 @@
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="CalculatorVariant" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
                     <Grid x:Name="CalculatorSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
-                    <Button x:Name="Calculator" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calculator_Click">
+                    <Button x:Name="Calculator" IsEnabled="False" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calculator_Click">
                         <TextBlock Text="Калькулятор"  FontSize="15" Margin="48,15,-10,15" />
                     </Button>
                 </Grid>
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="TshirtCrew" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,10,0,12"/>
                     <Grid x:Name="ClothesSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
-                    <Button x:Name="Clothes" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  Click="Clothes_Click" >
+                    <Button x:Name="Clothes" IsEnabled="False" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}"  Click="Clothes_Click" >
                         <TextBlock Text="Одежда"  FontSize="15" Margin="15,15,-10,15" />
                     </Button>
                 </Grid>
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Calendar" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
                     <Grid x:Name="CalendarSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
-                    <Button x:Name="Calendar"  Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calendar_Click" >
+                    <Button x:Name="Calendar" IsEnabled="False"  Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Calendar_Click" >
                         <TextBlock Text="Календарь"  FontSize="15" Margin="34,15,-10,15" />
                     </Button>
 
@@ -110,7 +110,7 @@
                 <Grid  Background="Firebrick">
                     <materialDesign:PackIcon Foreground="WhiteSmoke" Kind="Palette" Width="35" Height="35" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="13,13,0,12"/>
                     <Grid x:Name="PaintSelect" Height="60" Width="5" HorizontalAlignment="Left" Background="Firebrick"/>
-                    <Button x:Name="Paint" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Paint_Click">
+                    <Button x:Name="Paint" IsEnabled="False" Width="160" Height="60" Background="{x:Null}" BorderBrush="{x:Null}" Click="Paint_Click">
                         <TextBlock Text="Рисовалка"  FontSize="15" Margin="34,15,-10,15" />
                     </Button>
                 </Grid>

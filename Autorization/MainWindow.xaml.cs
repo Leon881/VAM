@@ -82,8 +82,12 @@ namespace Autorization_form
                      (TextBlock)Owner.FindName("UserLogin"),
                      (Button)Owner.FindName("Autorization"),
                      (Button)Owner.FindName("SignOut"),
-                     (Button)Owner.FindName("ExcelExport"));
-                    MessageBox.Show("Пользователь добавлен!");
+                     (Button)Owner.FindName("ExcelExport"),
+                    (Button)Owner.FindName("Calculator"),
+                    (Button)Owner.FindName("Clothes"),
+                    (Button)Owner.FindName("Calendar"),
+                    (Button)Owner.FindName("Paint"));
+                    MessageBox.Show("Вход осуществлен!");
                     Owner.Activate();
                     Close();
                     break;

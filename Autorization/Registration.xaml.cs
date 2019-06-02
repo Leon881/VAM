@@ -65,11 +65,15 @@ namespace Autorization_form
             }
             else
             {
-                RegPrivileges.ChangeElementsForUser(login, 
+                RegPrivileges.ChangeElementsForUser(login,
                     (TextBlock)Owner.FindName("UserLogin"),
                     (Button)Owner.FindName("Autorization"),
                     (Button)Owner.FindName("SignOut"),
-                    (Button)Owner.FindName("ExcelExport"));
+                    (Button)Owner.FindName("ExcelExport"),
+                    (Button)Owner.FindName("Calculator"),
+                    (Button)Owner.FindName("Clothes"),
+                    (Button)Owner.FindName("Calendar"),
+                    (Button)Owner.FindName("Paint"));
 
                 MessageBox.Show("Пользователь добавлен!");
                 Owner.Activate();

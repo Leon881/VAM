@@ -103,10 +103,10 @@ namespace Multiplector
 
         private void Clothes_Click(object sender, RoutedEventArgs e)
         {
-            if (NowOpen == 6) return;
+            if (NowOpen == 3) return;
             else
             {
-                NowOpen = 6;
+                NowOpen = 3;
                 WhiteLineChange();
                 Startanimation();
             }
@@ -147,7 +147,7 @@ namespace Multiplector
             {
                 this.OutputView.Content = view5;
             }
-            if (NowOpen == 6)
+            if (NowOpen == 3)
             {
                 this.OutputView.Content = view6;
             }
@@ -169,7 +169,7 @@ namespace Multiplector
             if (NowOpen == 2) CalculatorSelect.Background = new SolidColorBrush(Colors.White);
             if (NowOpen == 4) CalendarSelect.Background = new SolidColorBrush(Colors.White);
             if (NowOpen == 5) PaintSelect.Background = new SolidColorBrush(Colors.White);
-            if (NowOpen == 6) ClothesSelect.Background = new SolidColorBrush(Colors.White);
+            if (NowOpen == 3) ClothesSelect.Background = new SolidColorBrush(Colors.White);
         }
 
         private void StartClock()
@@ -204,6 +204,16 @@ namespace Multiplector
             UserLogin.Visibility = Visibility.Hidden;
             SignOut.Visibility = Visibility.Hidden;
             Autorization.Visibility = Visibility.Visible;
+            this.OutputView.Content = view1;
+            PaintSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            CalculatorSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            CalendarSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            ClothesSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            ConverterSelect.Background = new SolidColorBrush(Colors.White);
+            Calculator.IsEnabled = false;
+            Calendar.IsEnabled = false;
+            Clothes.IsEnabled = false;
+            Paint.IsEnabled = false;
         }
 
         private void ExcelExport_Click(object sender, RoutedEventArgs e)
