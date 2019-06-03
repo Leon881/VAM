@@ -27,7 +27,7 @@ namespace Multiplector.Tools
 
         public PaintTool()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         private void BlackColor_Click(object sender, RoutedEventArgs e)

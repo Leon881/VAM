@@ -58,7 +58,7 @@
 
             </StackPanel>
         </Grid>
-        <TextBox x:Name="Clock" Cursor="Arrow" Focusable="False" IsReadOnly="True" Foreground="WhiteSmoke"  HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167" Margin="79,23,0,0" BorderThickness="0" FontSize="16"/>
+        <TextBox x:Name="Clock" Cursor="Arrow"  Focusable="False" IsReadOnly="True" Foreground="WhiteSmoke"  HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="167" Margin="79,23,0,0" BorderThickness="0" FontSize="16"/>
 
         <Grid x:Name="ContentPresenter"  Margin="60,70,0,0" HorizontalAlignment="Left">
             <Grid.Effect>

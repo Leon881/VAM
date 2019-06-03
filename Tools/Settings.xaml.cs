@@ -10,29 +10,49 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace Multiplector.Tools
 {
     /// <summary>
-    /// Логика взаимодействия для Page1.xaml
+    /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class Settings : UserControl
+    public partial class Settings : Window
     {
         public Settings()
         {
             InitializeComponent();
         }
 
-        private void time1_Checked(object sender, RoutedEventArgs e)
+        private void Time1_Checked(object sender, RoutedEventArgs e)
         {
-
+            var text =(TextBox)Owner.FindName("Clock");
+            DispatcherTimer tm = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            tm.Tick += (s, ea) =>
+            {
+                text.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd\.MM\.yyyy");
+            };
+            tm.Start();
+            Owner.Activate();
         }
 
-        private void time2_Checked(object sender, RoutedEventArgs e)
+        private void Time2_Checked(object sender, RoutedEventArgs e)
         {
-
+            var text = (TextBox)Owner.FindName("Clock");
+            DispatcherTimer tm = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            tm.Tick += (s, ea) =>
+            {
+                text.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd MMMM yyyy");
+            };
+            tm.Start();
+            Owner.Activate();
         }
     }
 }
