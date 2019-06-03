@@ -108,6 +108,9 @@
     <Compile Include="Tools\ClothesTool.xaml.cs">
       <DependentUpon>ClothesTool.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tools\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tools\PaintTool.xaml.cs">
       <DependentUpon>PaintTool.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Tools\ClothesTool.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tools\Settings.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

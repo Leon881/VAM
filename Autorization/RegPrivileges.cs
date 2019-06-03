@@ -18,15 +18,14 @@ namespace Multiplector.Autorization
         }
 
         public static void ChangeElementsForUser(string login, TextBlock userLogin, Button Autorization, 
-            Button signOut, Button excelExport, Button Calculator, Button Clothes, Button Calendar, Button Paint)
+            Button signOut, Button excelExport, Grid GridClothes, Grid GridCalendar,Grid GridPaint)
         {
             RegPrivileges.AddButtons(userLogin, signOut);
             userLogin.SetValue(TextBlock.TextProperty, login);
             Autorization.Visibility = Visibility.Hidden;
-            Calculator.IsEnabled = true;
-            Clothes.IsEnabled = true;
-            Calendar.IsEnabled = true;
-            Paint.IsEnabled = true;
+            GridClothes.Visibility = Visibility.Visible;
+            GridCalendar.Visibility = Visibility.Visible;
+            GridPaint.Visibility = Visibility.Visible;
             if (login == "Admin") RegPrivileges.AddButtons(excelExport);
         }
     }

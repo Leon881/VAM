@@ -118,7 +118,12 @@ namespace Multiplector
             this.OutputView.Content = view;
             NowOpen = 11;
         }
-
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            var view = new Settings();
+            this.OutputView.Content = view;
+            NowOpen = 6;
+        }
         private void Startanimation()
         {
             DoubleAnimation animation = new DoubleAnimation();
@@ -174,6 +179,10 @@ namespace Multiplector
 
         private void StartClock()
         {
+            var clock = new Multiplector.Tools.Settings();
+            clock.Owner = this;
+            clock.Show();
+
             DispatcherTimer tm = new DispatcherTimer
             {
                 Interval = TimeSpan.FromSeconds(1)
@@ -204,21 +213,25 @@ namespace Multiplector
             UserLogin.Visibility = Visibility.Hidden;
             SignOut.Visibility = Visibility.Hidden;
             Autorization.Visibility = Visibility.Visible;
-            this.OutputView.Content = view1;
-            PaintSelect.Background = new SolidColorBrush(Colors.Firebrick);
-            CalculatorSelect.Background = new SolidColorBrush(Colors.Firebrick);
-            CalendarSelect.Background = new SolidColorBrush(Colors.Firebrick);
-            ClothesSelect.Background = new SolidColorBrush(Colors.Firebrick);
-            ConverterSelect.Background = new SolidColorBrush(Colors.White);
-            Calculator.IsEnabled = false;
-            Calendar.IsEnabled = false;
-            Clothes.IsEnabled = false;
-            Paint.IsEnabled = false;
+            if (this.OutputView.Content == view1 || this.OutputView.Content == view2)
+            {
+                GridClothes.Visibility = Visibility.Hidden;
+                GridCalendar.Visibility = Visibility.Hidden;
+                GridPaint.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                this.OutputView.Content = view1;
+                ConverterSelect.Background = new SolidColorBrush(Colors.White);
+                GridClothes.Visibility = Visibility.Hidden;
+                GridCalendar.Visibility = Visibility.Hidden;
+                GridPaint.Visibility = Visibility.Hidden;
+            }
         }
 
         private void ExcelExport_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Пользователи экспортированы!");
+            MessageBox.Show("Пользователи экспортированы!", "",MessageBoxButton.OK, MessageBoxImage.Information);
             ExcelSaver.AddUsersToSheet();
         }
     }

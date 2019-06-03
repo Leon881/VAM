@@ -9,6 +9,6 @@
              d:DesignHeight="500" d:DesignWidth="712">
     <Grid>
         <Label Content="Приложение Multitool:&#xD;&#xA;&#xD;&#xA;Разработано студентами Уральского Федерального Университета&#xD;&#xA;Группа  РИ-270017&#xD;&#xA;&#xD;&#xA;Коротких Вадимом Юрьевичем&#xD;&#xA;Бутузовым Александром Витальевичем&#xD;&#xA;Степановым Максимом Андреевичем" HorizontalAlignment="Left" Margin="7,7,0,0" VerticalAlignment="Top" Height="257" Width="682" FontSize="22"/>
-        <Image Source="D:\GitHubProject\image\UrFULogo_Full_Russian.png" HorizontalAlignment="Left" Height="196" Margin="102,275,0,0" VerticalAlignment="Top" Width="478"/>
+        <Image Source="C:\Project\image\UrFULogo_Full_Russian.png" HorizontalAlignment="Left" Height="196" Margin="102,275,0,0" VerticalAlignment="Top" Width="478"/>
     </Grid>
 </UserControl>

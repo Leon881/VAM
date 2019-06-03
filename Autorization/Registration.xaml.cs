@@ -28,7 +28,7 @@ namespace Autorization_form
         private void Registrate_Click(object sender, RoutedEventArgs e)
         {
             if (NewUsername.Text == "" || NewPassword.Password == "")
-                MessageBox.Show("Заполните все поля", "Ошибка ввода");
+                MessageBox.Show("Заполните все поля", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Error);
             else SignIn();
         }
 
@@ -36,7 +36,7 @@ namespace Autorization_form
         {
             if (e.Key == Key.Enter)
             {
-                if (NewUsername.Text == "") MessageBox.Show("Введите логин!", "Ошибка");
+                if (NewUsername.Text == "") MessageBox.Show("Введите логин!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 else if (NewPassword.Password == "") NewPassword.Focus();
                 else SignIn();
             }
@@ -46,7 +46,7 @@ namespace Autorization_form
         {
             if (e.Key == Key.Enter)
             {
-                if (NewPassword.Password == "") MessageBox.Show("Введите пароль!", "Ошибка");
+                if (NewPassword.Password == "") MessageBox.Show("Введите пароль!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 else if (NewUsername.Text == "") NewUsername.Focus();
                 else SignIn();
             }
@@ -59,7 +59,7 @@ namespace Autorization_form
             var res = SqlDataAccess.RegisterUser(newUser, out login);
             if (res == -1)
             {
-                MessageBox.Show("Введенное имя пользователя уже существует", "Ошибка ввода логина");
+                MessageBox.Show("Введенное имя пользователя уже существует", "Ошибка ввода логина", MessageBoxButton.OK, MessageBoxImage.Error);
                 NewUsername.Clear();
                 NewPassword.Clear();
             }
@@ -70,12 +70,11 @@ namespace Autorization_form
                     (Button)Owner.FindName("Autorization"),
                     (Button)Owner.FindName("SignOut"),
                     (Button)Owner.FindName("ExcelExport"),
-                    (Button)Owner.FindName("Calculator"),
-                    (Button)Owner.FindName("Clothes"),
-                    (Button)Owner.FindName("Calendar"),
-                    (Button)Owner.FindName("Paint"));
+                    (Grid)Owner.FindName("GridClothes"),
+                    (Grid)Owner.FindName("GridCalendar"),
+                    (Grid)Owner.FindName("GridPaint"));
 
-                MessageBox.Show("Пользователь добавлен!");
+                MessageBox.Show("Пользователь добавлен!", "", MessageBoxButton.OK,MessageBoxImage.Information);
                 Owner.Activate();
                 Close();
             }

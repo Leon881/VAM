@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ПК\Desktop\тест\obj\Debug\
+C:\project\obj\Debug\
 Multiplector
 none
 false
 DEBUG;TRACE
-C:\Users\ПК\Desktop\тест\App.xaml
-91398360168
+C:\project\App.xaml
+101769662582
 
-212053203570
-24-1889522519
-Autorization\MainWindow.xaml;Autorization\Registration.xaml;MainWindow.xaml;Tools\AboutProgramm.xaml;Tools\CalendarTool.xaml;Tools\ConverterTool.xaml;Tools\Calculator.xaml;Tools\ClothesTool.xaml;Tools\PaintTool.xaml;
+22-1391444289
+24-453537322
+Autorization\MainWindow.xaml;Autorization\Registration.xaml;MainWindow.xaml;Tools\AboutProgramm.xaml;Tools\CalendarTool.xaml;Tools\ConverterTool.xaml;Tools\Calculator.xaml;Tools\ClothesTool.xaml;Tools\Settings.xaml;Tools\PaintTool.xaml;
 
 True
 

@@ -30,7 +30,7 @@ namespace Autorization_form
         private void LognIn_Click(object sender, RoutedEventArgs e)
         {
             if (Username.Text == "" || Password.Password == "")
-                MessageBox.Show("Заполните все поля", "Ошибка ввода");
+                MessageBox.Show("Заполните все поля", "Ошибка ввода", MessageBoxButton.OK, MessageBoxImage.Error);
             else LogIn(new UserForm(Username.Text, Password.Password));
         }
 
@@ -46,7 +46,7 @@ namespace Autorization_form
         {
             if (e.Key == Key.Enter)
             {
-                if (Username.Text == "") MessageBox.Show("Введите логин!", "Ошибка");
+                if (Username.Text == "") MessageBox.Show("Введите логин!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 else if (Password.Password == "") Password.Focus();
                 else LogIn(new UserForm(Username.Text, Password.Password));
             }
@@ -69,12 +69,12 @@ namespace Autorization_form
             switch(res)
             {
                 case -1:
-                    MessageBox.Show("Неверно введен логин", "Ошибка ввода логина");
+                    MessageBox.Show("Неверно введен логин", "Ошибка ввода логина", MessageBoxButton.OK, MessageBoxImage.Error);
                     Username.Clear();
                     Password.Clear();
                     break;
                 case 0:
-                    MessageBox.Show("Неверно введен пароль", "Ошибка ввода пароля");
+                    MessageBox.Show("Неверно введен пароль", "Ошибка ввода пароля", MessageBoxButton.OK, MessageBoxImage.Error);
                     Password.Clear();
                     break;
                 default:
@@ -83,13 +83,12 @@ namespace Autorization_form
                      (Button)Owner.FindName("Autorization"),
                      (Button)Owner.FindName("SignOut"),
                      (Button)Owner.FindName("ExcelExport"),
-                    (Button)Owner.FindName("Calculator"),
-                    (Button)Owner.FindName("Clothes"),
-                    (Button)Owner.FindName("Calendar"),
-                    (Button)Owner.FindName("Paint"));
-                    MessageBox.Show("Вход осуществлен!");
-                    Owner.Activate();
+                    (Grid)Owner.FindName("GridClothes"),
+                    (Grid)Owner.FindName("GridCalendar"),
+                    (Grid)Owner.FindName("GridPaint"));
                     Close();
+                    MessageBox.Show("Вход осуществлен успешно!", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                    Owner.Activate();
                     break;
             }
         }
