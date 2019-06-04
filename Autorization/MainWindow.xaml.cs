@@ -86,7 +86,6 @@ namespace Autorization_form
                     (Grid)Owner.FindName("GridClothes"),
                     (Grid)Owner.FindName("GridCalendar"),
                     (Grid)Owner.FindName("GridPaint"));
-                    MessageBox.Show("Вход осуществлен успешно!", "", MessageBoxButton.OK, MessageBoxImage.Information);
                     Close();
                     Owner.Activate();
                     break;
