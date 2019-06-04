@@ -27,7 +27,11 @@ namespace Multiplector.Tools
 
         public PaintTool()
         {
-            //InitializeComponent();
+            InitializeComponent();
+            ImageBrush ib = new ImageBrush();
+            ib.ImageSource = new BitmapImage(new Uri("C:/project/image/Thicknesses.png", UriKind.Relative));
+            cbxThickness.Background = ib;
+
         }
 
         private void BlackColor_Click(object sender, RoutedEventArgs e)

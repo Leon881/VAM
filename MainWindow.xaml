@@ -47,9 +47,9 @@
                 <TextBlock  VerticalAlignment="Center" FontSize="18"/>
                 <materialDesign:PopupBox Margin="05" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
-                        <Button Content="О программе" Click="AboutProgramm_Click"/>
-                        <Button Content="Настройки" Click="Settings_Click"/> 
-                        <Button Content="Инструкция"/>
+                        <Button Content="Инструкция" Click="Instructions_Click" />
+                        <Button Content="Создатели" Click="AboutProgramm_Click"/>
+                        <Button Content="Настройки" /> 
                         <Button x:Name="ExcelExport" Content="Экпорт БД " Visibility="Hidden"  Click="ExcelExport_Click"/>
                         <Separator/>
                         <Button x:Name="ButtonPopUp" Content="Выход" Click="ButtonPopUp_Click"/>
@@ -116,5 +116,6 @@
                 </Grid>
             </StackPanel>
         </Grid>
+       
     </Grid>
 </Window>

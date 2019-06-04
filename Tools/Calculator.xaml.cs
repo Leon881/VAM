@@ -13,32 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Multiplector.Classes;
 
 namespace Multiplector.Tools
 {
-    class Messages
-    {
-        public string Message1()
-        {
-            return "Не все скобки парные";
-        }
-        public string Message2()
-        {
-            return "Делить на ноль нельзя";
-        }
-        public string Message3()
-        {
-            return "Выражение не может заканчиваться знаком";
-        }
-        public string Message4()
-        {
-            return "Выражение не может заканчиваться знаком";
-        }
-        public string EasterEgg()
-        {
-            return "Откуда у вас этот номер ?";
-        }
-    }
+    
     public partial class CalculatorTool : UserControl
     {
         public CalculatorTool()

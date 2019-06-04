@@ -13,72 +13,11 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Multiplector.Classes;
 
 namespace Multiplector.Tools
 {
-    class Information
-    {
-        public string box1;
-        public string box2;
-        public string box3;
-        public string sex;
-        public string GetInfo()
-        {
-            if (box1 == "Обувь" && sex == "man")
-                return "ManShoes";
-            else if (box1 == "Обувь" && sex == "woman")
-                return "WomanShoes";
-            else if (box1 == "Обувь" && sex == "child")
-                return "ChildShoes";
-            else if (box1 == "Брюки и джинсы" && sex == "man" && box2 != "Международный размер" && box3 != "Международный размер")
-                return "ManPants";
-            else if (box1 == "Брюки и джинсы" && sex == "man" && box2 != "Международный размер" && box3 == "Международный размер")
-                return "ManPants1";
-            else if (box1 == "Брюки и джинсы" && sex == "man" && box3 != "Международный размер" && box2 == "Международный размер")
-                return "ManPants2";
-            else if ((box1 == "Брюки и джинсы" || box1 == "Юбки") && sex == "woman" && box2 != "Международный размер" && box3 != "Международный размер")
-                return "WomanPants";
-            else if ((box1 == "Брюки и джинсы" || box1 == "Юбки") && sex == "woman" && box2 != "Международный размер" && box3 == "Международный размер")
-                return "WomanPants1";
-            else if ((box1 == "Брюки и джинсы" || box1 == "Юбки") && sex == "woman" && box3 != "Международный размер" && box2 == "Международный размер")
-                return "WomanPants2";
-            else if (box1 == "Футболки" && sex == "man" && box2 != "Международный размер" && box3 != "Международный размер")
-                return "ManTShirt";
-            else if (box1 == "Футболки" && sex == "man" && box2 != "Международный размер" && box3 == "Международный размер")
-                return "ManTShirt1";
-            else if (box1 == "Футболки" && sex == "man" && box3 != "Международный размер" && box2 == "Международный размер")
-                return "ManTShirt2";
-            else if (box1 == "Футболки" && sex == "woman" && box2 != "Международный размер" && box3 != "Международный размер")
-                return "WomanTShirt";
-            else if (box1 == "Футболки" && sex == "woman" && box2 != "Международный размер" && box3 == "Международный размер")
-                return "WomanTShirt1";
-            else if (box1 == "Футболки" && sex == "woman" && box3 != "Международный размер" && box2 == "Международный размер")
-                return "WomanTShirt2";
-            else if (box2 == "Международный размер" && box3 == "Международный размер")
-                return "Equality";
-            else return null;
-
-        }
-    }
-    class Warnings
-    {
-        public string Warning1()
-        {
-            return "Не выбран размер для конвертации!";
-        }
-        public string Warning2()
-        {
-            return "Не выбраны типы размеров одежды!";
-        }
-        public string Warning3()
-        {
-            return "Вы не ввели свой рост!";
-        }
-        public string Warning4()
-        {
-            return "Вы не ввели свой вес!";
-        }
-    }
+    
     public partial class ClothesTool : UserControl
     {
         public ClothesTool()
@@ -469,16 +408,16 @@ namespace Multiplector.Tools
 
         private void Solve_Click(object sender, RoutedEventArgs e)
         {
-            var warnings = new Warnings();
+            var warnings = new Messages();
             if (Number.Text == "")
             {
-                Answer.Text = warnings.Warning1();
+                Answer.Text = warnings.Message5();
                 Timer();
                 return;
             }
             if (Combobox2.Text == "" || Combobox3.Text == "")
             {
-                Answer.Text = warnings.Warning2();
+                Answer.Text = warnings.Message6();
                 Timer();
                 return;
             }
@@ -653,16 +592,16 @@ namespace Multiplector.Tools
 
         private void Calculate_Click(object sender, RoutedEventArgs e)
         {
-            var warning = new Warnings();
+            var warning = new Messages();
             if (Weight.Text == "")
             {
-                Answer1.Text = warning.Warning4();
+                Answer1.Text = warning.Message8();
                 Timer();
                 return;
             }
             if (Height.Text == "")
             {
-                Answer1.Text = warning.Warning3();
+                Answer1.Text = warning.Message7();
                 Timer();
                 return;
             }

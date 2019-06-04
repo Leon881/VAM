@@ -61,8 +61,8 @@
                     </Button.ToolTip>
                 </Button>
             </Grid>
-            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120"  Margin="127,130,0,0" SelectionChanged="ComboBox2_SelectionChanged" />
-            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="372,130,0,0"/>
+            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170"  Margin="127,130,0,0" SelectionChanged="ComboBox2_SelectionChanged" />
+            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="372,130,0,0"/>
             <ComboBox  Visibility="Hidden" Name="Number" Foreground="Black" HorizontalAlignment="Left" Height="40"  Text="" VerticalAlignment="Top" Width="186" Margin="235,215,0,0"/>
             <Label Visibility="Hidden" Name="Label4" Content="Выберите размер:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="235,184,0,0" Width="121"/>
             <TextBox Name="Answer" IsReadOnly="True" BorderThickness="0"  Visibility="Hidden" HorizontalAlignment="Left" Height="65"  TextWrapping="Wrap" Foreground="Black" Text="" VerticalAlignment="Top" Width="374" Margin="146,326,0,0" FontSize="14"/>

@@ -31,12 +31,14 @@ namespace Multiplector
         CalculatorTool view2 = new CalculatorTool();
         CalendarTool view4 = new CalendarTool();
         PaintTool view5 = new PaintTool();
-        ClothesTool view6 = new ClothesTool();
+        ClothesTool view3 = new ClothesTool();
+        Informations view6 = new Informations();
 
         public MainWindow()
         {
             InitializeComponent();
             StartClock();
+            this.OutputView.Content = view6;
         }
 
         private void ButtonPopUp_Click(object sender, RoutedEventArgs e)
@@ -118,9 +120,9 @@ namespace Multiplector
             this.OutputView.Content = view;
             NowOpen = 11;
         }
-        private void Settings_Click(object sender, RoutedEventArgs e)
+        private void Instructions_Click(object sender, RoutedEventArgs e)
         {
-            var view = new Settings();
+            var view = new Informations();
             this.OutputView.Content = view;
             NowOpen = 6;
         }
@@ -154,7 +156,7 @@ namespace Multiplector
             }
             if (NowOpen == 3)
             {
-                this.OutputView.Content = view6;
+                this.OutputView.Content = view3;
             }
             DoubleAnimation animation = new DoubleAnimation();
             animation.From = 0;
@@ -179,9 +181,16 @@ namespace Multiplector
 
         private void StartClock()
         {
-            var clock = new Settings();
-            clock.Owner = this;
-            clock.Show();
+            DispatcherTimer tm = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(1)
+            };
+            tm.Tick += (s, ea) =>
+            {
+                Clock.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd MMMM yyyy");
+            };
+            tm.Start();
+
 
             //DispatcherTimer tm = new DispatcherTimer
             //{
@@ -213,20 +222,13 @@ namespace Multiplector
             UserLogin.Visibility = Visibility.Hidden;
             SignOut.Visibility = Visibility.Hidden;
             Autorization.Visibility = Visibility.Visible;
-            if (this.OutputView.Content == view1 || this.OutputView.Content == view2)
-            {
-                GridClothes.Visibility = Visibility.Hidden;
-                GridCalendar.Visibility = Visibility.Hidden;
-                GridPaint.Visibility = Visibility.Hidden;
-            }
-            else
-            {
-                this.OutputView.Content = view1;
-                ConverterSelect.Background = new SolidColorBrush(Colors.White);
-                GridClothes.Visibility = Visibility.Hidden;
-                GridCalendar.Visibility = Visibility.Hidden;
-                GridPaint.Visibility = Visibility.Hidden;
-            }
+            ExcelExport.Visibility = Visibility.Hidden;
+            GridClothes.Visibility = Visibility.Hidden;
+            GridCalendar.Visibility = Visibility.Hidden;
+            GridPaint.Visibility = Visibility.Hidden;
+            ConverterSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            CalculatorSelect.Background = new SolidColorBrush(Colors.Firebrick);
+            this.OutputView.Content = view6;
         }
 
         private void ExcelExport_Click(object sender, RoutedEventArgs e)
@@ -234,5 +236,7 @@ namespace Multiplector
             MessageBox.Show("Пользователи экспортированы!", "",MessageBoxButton.OK, MessageBoxImage.Information);
             ExcelSaver.AddUsersToSheet();
         }
+
+
     }
 }

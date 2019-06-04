@@ -350,5 +350,5 @@ C:\project\bin\Debug\System.Data.SQLite.dll.config
 C:\project\obj\Debug\Autorization\MainWindow.baml
 C:\project\obj\Debug\Autorization\Registration.baml
 C:\project\obj\Debug\Tools\ClothesTool.baml
-C:\project\obj\Debug\Tools\Settings.g.cs
-C:\project\obj\Debug\Tools\Settings.baml
+C:\project\obj\Debug\Tools\Information.g.cs
+C:\project\obj\Debug\Tools\Information.baml

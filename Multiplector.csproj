@@ -93,6 +93,8 @@
     <Compile Include="Autorization\RegPrivileges.cs" />
     <Compile Include="Autorization\SqlDataAccess.cs" />
     <Compile Include="Autorization\UserForm.cs" />
+    <Compile Include="Classes\Information.cs" />
+    <Compile Include="Classes\Messages.cs" />
     <Compile Include="Tools\AboutProgramm.xaml.cs">
       <DependentUpon>AboutProgramm.xaml</DependentUpon>
     </Compile>
@@ -108,11 +110,11 @@
     <Compile Include="Tools\ClothesTool.xaml.cs">
       <DependentUpon>ClothesTool.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tools\Information.xaml.cs">
+      <DependentUpon>Information.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tools\PaintTool.xaml.cs">
       <DependentUpon>PaintTool.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Tools\Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
     <Page Include="Autorization\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -154,11 +156,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tools\PaintTool.xaml">
+    <Page Include="Tools\Information.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tools\Settings.xaml">
+    <Page Include="Tools\PaintTool.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

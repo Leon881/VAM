@@ -15,16 +15,12 @@ using System.Windows.Shapes;
 
 namespace Multiplector.Tools
 {
-    /// <summary>
-    /// Логика взаимодействия для UserControl1.xaml
-    /// </summary>
-    public partial class AboutProgramm : UserControl
+
+    public partial class Informations : UserControl
     {
-        public AboutProgramm()
+        public Informations()
         {
             InitializeComponent();
-            Logo.Source = new BitmapImage(new Uri( "/image/UrFULogo_Full_Russian.png", UriKind.Relative));
-
         }
     }
 }
