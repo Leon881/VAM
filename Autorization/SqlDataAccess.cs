@@ -10,7 +10,7 @@ using Dapper;
 
 namespace Autorization_form
 {
-    public class SqlDataAccess
+    public static class SqlDataAccess
     {
         public static int RegisterUser(UserForm user, out string login)
         {

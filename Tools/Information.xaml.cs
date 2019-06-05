@@ -21,6 +21,7 @@ namespace Multiplector.Tools
         public Informations()
         {
             InitializeComponent();
+            Logo.Source = new BitmapImage(new Uri("/image/Logo.jpg", UriKind.Relative));
         }
     }
 }

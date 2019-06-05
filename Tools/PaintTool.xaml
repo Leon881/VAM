@@ -41,26 +41,26 @@
                 <StackPanel Height="70" Cursor="Hand">
                     <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
                         <ComboBox.Background>
-                            <ImageBrush  ImageSource="{Binding}" Stretch="UniformToFill"/>
+                            <ImageBrush  ImageSource="C:\project\image\Thicknesses.png" Stretch="UniformToFill"/>
                         </ComboBox.Background>
-                        <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="1 px" Margin="0,0,0.4,0" >
+                        <ComboBoxItem Name="T1" Cursor="Hand" Height="30" Width="70" ToolTip="1 px" Margin="0,0,0.4,0" >
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness1.png"/>
+                                <ImageBrush ImageSource="C:\project\image\Thickness1.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="3 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness3.png"/>
+                                <ImageBrush ImageSource="C:\project\image\Thickness3.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="5 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness5.png"/>
+                                <ImageBrush ImageSource="C:\project\image\Thickness5.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="7 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness7.png"/>
+                                <ImageBrush ImageSource="C:\project\image\Thickness7.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                     </ComboBox>

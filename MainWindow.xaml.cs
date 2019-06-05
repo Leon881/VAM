@@ -190,23 +190,6 @@ namespace Multiplector
                 Clock.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd MMMM yyyy");
             };
             tm.Start();
-
-
-            //DispatcherTimer tm = new DispatcherTimer
-            //{
-            //    Interval = TimeSpan.FromSeconds(1)
-            //};
-            //tm.Tick += (s, ea) =>
-            //{
-            //    // На будущее оставил
-            //    //if (Radio1.IsChecked == true)
-            //    //{
-            //    //    Clock.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd\.MM\.yyyy");
-            //    //}
-            //    //else if (Radio2.IsChecked == true)
-            //        Clock.Text = DateTime.Now.ToString(@"HH\:mm\:ss  dd MMMM yyyy");
-            //};
-            //tm.Start();
         }
 
         private void Autorization_Click(object sender, RoutedEventArgs e)

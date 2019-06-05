@@ -9,7 +9,7 @@ using Dapper;
 
 namespace Multiplector.Autorization
 {
-    public class ExcelSaver
+    public static class ExcelSaver
     {     
         public static void AddUsersToSheet()
         {
