@@ -8,6 +8,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="500" d:DesignWidth="712">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="406" Foreground="Black" TextWrapping="Wrap" VerticalContentAlignment="Center" Text="Здравствуйте. Вы работаете в приложении Multitool, включающем в себя такие полезные программы как конвертер величин, калькулятор, конвертер размеров одежды и обуви, пэинт и календарь, расчитывающий время между датами. Чтобы открыть нужную программу просто нажмите на одну из кнопок в меню слева. Внимание! Без авторизации вам доступны только конвертер и калькулятор. Войдите или зарегистрируйтесь, чтобы получить доступ ко всем приложениям. Спасибо за использование нашего приложения! " BorderThickness="0" VerticalAlignment="Top" Width="700" Margin="2,10,0,0" FontSize="18"/>
+        <StackPanel>
+            <TextBox HorizontalAlignment="Left" Text="Здравствуйте!" Foreground="Black" VerticalContentAlignment="Center" VerticalAlignment="Top"  FontSize="30" BorderThickness="0"  Margin="2,10,0,0" />
+            <TextBox HorizontalAlignment="Left" Foreground="Black" TextWrapping="Wrap" VerticalContentAlignment="Center" Text="Вы работаете в приложении Multitool, включающем в себя такие полезные программы как конвертер величин, калькулятор, конвертер размеров одежды и обуви, пэинт и календарь, расчитывающий время между датами. Чтобы открыть нужную программу просто нажмите на одну из кнопок в меню слева." BorderThickness="0" VerticalAlignment="Top" Width="700" Margin="2,10,0,0" FontSize="20"/>
+            <TextBox HorizontalAlignment="Left" Foreground="#FF2B75E0" TextWrapping="Wrap" VerticalContentAlignment="Center" Text="Внимание! Без авторизации вам доступны только конвертер и калькулятор. Войдите или зарегистрируйтесь, чтобы получить доступ ко всем приложениям. Спасибо за использование нашего приложения! " BorderThickness="0" VerticalAlignment="Top" Width="700" Margin="2,10,0,0" FontSize="20"/>
+        </StackPanel>
     </Grid>
 </UserControl>

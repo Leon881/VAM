@@ -133,11 +133,15 @@ namespace Multiplector.Tools
         };
         private void Man_Click(object sender, RoutedEventArgs e)
         {
-            HiddenMainElements();
+            Man.BorderBrush= new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF2B75E0"));
+            Woman.BorderBrush = null;
+            Child.BorderBrush = null;
+            Size.BorderBrush = null;
             man = true;
             woman = false;
             size = false;
             child = false;
+            IndexMassu.Visibility = Visibility.Hidden;
             ShowElements();
             Combobox1.Items.Clear();
             foreach (var str in manList)
@@ -146,11 +150,15 @@ namespace Multiplector.Tools
 
         private void Woman_Click(object sender, RoutedEventArgs e)
         {
-            HiddenMainElements();
+            Man.BorderBrush = null;
+            Woman.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF2B75E0"));
+            Child.BorderBrush = null;
+            Size.BorderBrush = null;
             man = false;
             woman = true;
             size = false;
             child = false;
+            IndexMassu.Visibility = Visibility.Hidden;
             ShowElements();
             Combobox1.Items.Clear();
             foreach (var str in manList)
@@ -160,11 +168,15 @@ namespace Multiplector.Tools
 
         private void Child_Click(object sender, RoutedEventArgs e)
         {
-            HiddenMainElements();
+            Man.BorderBrush = null;
+            Woman.BorderBrush = null;
+            Child.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF2B75E0"));
+            Size.BorderBrush = null;
             man = false;
             woman = false;
             size = false;
             child = true;
+            IndexMassu.Visibility = Visibility.Hidden;
             ShowElements();
             Combobox1.Items.Clear();
             Combobox1.Items.Add("Обувь");
@@ -172,48 +184,22 @@ namespace Multiplector.Tools
 
         private void Size_Click(object sender, RoutedEventArgs e)
         {
-            HiddenMainElements();
+            Man.BorderBrush = null;
+            Woman.BorderBrush = null;
+            Child.BorderBrush = null;
+            Size.BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF2B75E0"));
             man = false;
             woman = false;
             size = true;
             child = false;
-            Weight.Visibility = Visibility.Visible;
-            Height.Visibility = Visibility.Visible;
-            LabelHeight.Visibility = Visibility.Visible;
-            LabelWeight.Visibility = Visibility.Visible;
-            Answer1.Visibility = Visibility.Visible;
-            Calculate.Visibility = Visibility.Visible;
-            Name.Visibility = Visibility.Visible;
-            GridBack1.Visibility = Visibility.Visible;
+            MWC.Visibility = Visibility.Hidden;
+            IndexMassu.Visibility = Visibility.Visible;  
+            
         }
-        public void HiddenMainElements()
-        {
-            GridMan.Visibility = Visibility.Hidden;
-            GridWoman.Visibility = Visibility.Hidden;
-            GridChild.Visibility = Visibility.Hidden;
-            GridSize.Visibility = Visibility.Hidden;
-        }
+        
         public void ShowElements()
         {
-            Combobox1.Visibility = Visibility.Visible;
-            Combobox2.Visibility = Visibility.Visible;
-            Combobox3.Visibility = Visibility.Visible;
-            Label1.Visibility = Visibility.Visible;
-            Label2.Visibility = Visibility.Visible;
-            Label3.Visibility = Visibility.Visible;
-            Label4.Visibility = Visibility.Visible;
-            Number.Visibility = Visibility.Visible;
-            Answer.Visibility = Visibility.Visible;
-            GridBack.Visibility = Visibility.Visible;
-            Solve.Visibility = Visibility.Visible;
-            Help.Visibility = Visibility.Visible;
-            Help.Content = string.Empty;
-            if (man == true)
-                Help.Content = "Конвертация мужской одежды";
-            else if (woman == true)
-                Help.Content = "Конвертация женской одежды";
-            else if (child == true)
-                Help.Content = "Конвертация детской одежды";
+            MWC.Visibility = Visibility.Visible;            
         }
         private void ComboBox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -384,27 +370,7 @@ namespace Multiplector.Tools
                 }
             }
         }
-        private void Back_Click(object sender, RoutedEventArgs e)
-        {
-            Answer.Text = string.Empty;
-            Number.Text = string.Empty;
-            Combobox1.Visibility = Visibility.Hidden;
-            Combobox2.Visibility = Visibility.Hidden;
-            Combobox3.Visibility = Visibility.Hidden;
-            Label1.Visibility = Visibility.Hidden;
-            Label2.Visibility = Visibility.Hidden;
-            Label3.Visibility = Visibility.Hidden;
-            Label4.Visibility = Visibility.Hidden;
-            Number.Visibility = Visibility.Hidden;
-            Help.Visibility = Visibility.Hidden;
-            Answer.Visibility = Visibility.Hidden;
-            Solve.Visibility = Visibility.Hidden;
-            GridBack.Visibility = Visibility.Hidden;
-            GridMan.Visibility = Visibility.Visible;
-            GridWoman.Visibility = Visibility.Visible;
-            GridChild.Visibility = Visibility.Visible;
-            GridSize.Visibility = Visibility.Visible;
-        }
+       
 
         private void Solve_Click(object sender, RoutedEventArgs e)
         {
@@ -545,27 +511,7 @@ namespace Multiplector.Tools
             };
             tm.Start();
         }
-
-        private void Back1_Click(object sender, RoutedEventArgs e)
-        {
-            Weight.Text = string.Empty;
-            Height.Text = string.Empty;
-            Answer1.Text = string.Empty;
-            Weight.Visibility = Visibility.Hidden;
-            Height.Visibility = Visibility.Hidden;
-            LabelHeight.Visibility = Visibility.Hidden;
-            LabelWeight.Visibility = Visibility.Hidden;
-            Answer1.Visibility = Visibility.Hidden;
-            Calculate.Visibility = Visibility.Hidden;
-            Name.Visibility = Visibility.Hidden;
-            GridBack1.Visibility = Visibility.Hidden;
-            GridBack.Visibility = Visibility.Hidden;
-            GridMan.Visibility = Visibility.Visible;
-            GridWoman.Visibility = Visibility.Visible;
-            GridChild.Visibility = Visibility.Visible;
-            GridSize.Visibility = Visibility.Visible;
-        }
-
+       
         private void Weight_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             if (!Char.IsDigit(e.Text, 0))

@@ -12,7 +12,7 @@
         <TextBox Name="Username" FontSize="20" Margin="20 5" KeyUp="Username_KeyUp"/>
         <Label Content="Пароль" FontSize="15" HorizontalAlignment="Center"/>
         <PasswordBox Name="Password" FontSize="20" Margin="20 5" KeyUp="Password_KeyUp"/>
-        <Button Content="Войти" FontSize="20px" Width="150px" Margin="0 5px" Click="LognIn_Click"/>
-        <Button FontSize="20px" Content="Еще не зарегистрированы?" Click="RegButton_Click"/>
+        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2B75E0" Content="Войти" FontSize="20px" Width="150px" Margin="0 5px" Click="LognIn_Click" FontWeight="Normal" />
+        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2B75E0" FontSize="20px" Content="Еще не зарегистрированы?" Click="RegButton_Click" FontWeight="Normal" />
     </StackPanel>
 </Window>

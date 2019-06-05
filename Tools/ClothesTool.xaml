@@ -8,9 +8,9 @@
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"  
               d:DesignHeight="500" d:DesignWidth="712">
     <Grid Width="712" Height="500">
-
-        <Grid Margin="-10,10,10,-10">
-            <Grid Name="GridMan" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,130,380,0" >
+        <Grid Width="320" Height="80" VerticalAlignment="Top" HorizontalAlignment="Center" >
+            <TabPanel Width="320" >
+                <Grid Name="GridMan" Visibility="Visible" Width="80" Height="80"  >
                 <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="Man" Width="60" Height="60"/>
                 <Button x:Name="Man" BorderBrush="{x:Null}" Width="80" Height="80"  Background="{x:Null}" Click="Man_Click">
                     <Button.ToolTip>
@@ -20,7 +20,7 @@
                     </Button.ToolTip>
                 </Button>
             </Grid>
-            <Grid Name="GridWoman" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,130,280,0" >
+                <Grid Name="GridWoman" Visibility="Visible" Width="80" Height="80"  HorizontalAlignment="Right" >
                 <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="Woman" Width="60" Height="60"/>
                 <Button x:Name="Woman" BorderBrush="{x:Null}" Width="80" Height="80"  Background="{x:Null}" Click="Woman_Click">
                     <Button.ToolTip>
@@ -30,7 +30,7 @@
                     </Button.ToolTip>
                 </Button>
             </Grid>
-            <Grid Name="GridChild" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,210,380,0" >
+                <Grid Name="GridChild" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right"  >
                 <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="Baby" Width="60" Height="60"/>
                 <Button x:Name="Child" BorderBrush="{x:Null}" Width="80" Height="80"  Background="{x:Null}" Click="Child_Click">
                     <Button.ToolTip>
@@ -40,7 +40,7 @@
                     </Button.ToolTip>
                 </Button>
             </Grid>
-            <Grid Name="GridSize" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,210,280,0" >
+                <Grid Name="GridSize" Visibility="Visible" Width="80" Height="80" VerticalAlignment="Top" HorizontalAlignment="Right" >
                 <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="Calculator" Width="60" Height="60"/>
                 <Button x:Name="Size" BorderBrush="{x:Null}" Width="80" Height="80"  Background="{x:Null}" Click="Size_Click">
                     <Button.ToolTip>
@@ -50,44 +50,30 @@
                     </Button.ToolTip>
                 </Button>
             </Grid>
-            <ComboBox  Foreground="Black" Visibility="Hidden" Name="Combobox1"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Margin="86,42,0,0" SelectionChanged="ComboBox1_SelectionChanged" />
-            <Grid Visibility="Hidden" Name="GridBack" Width="40" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="86,42,300,0" >
-                <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="ArrowBack" Width="30" Height="30"/>
-                <Button x:Name="Back" BorderBrush="{x:Null}" Width="40" Height="40"  Background="{x:Null}" VerticalAlignment="Top" Click="Back_Click" >
-                    <Button.ToolTip>
-                        <ToolTip>
-                            Вернуться назад
-                        </ToolTip>
-                    </Button.ToolTip>
-                </Button>
-            </Grid>
-            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170"  Margin="127,130,0,0" SelectionChanged="ComboBox2_SelectionChanged" />
-            <ComboBox Foreground="Black" Visibility="Hidden" Name="Combobox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="372,130,0,0"/>
-            <ComboBox  Visibility="Hidden" Name="Number" Foreground="Black" HorizontalAlignment="Left" Height="40"  Text="" VerticalAlignment="Top" Width="186" Margin="235,215,0,0"/>
-            <Label Visibility="Hidden" Name="Label4" Content="Выберите размер:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="235,184,0,0" Width="121"/>
-            <TextBox Name="Answer" IsReadOnly="True" BorderThickness="0"  Visibility="Hidden" HorizontalAlignment="Left" Height="65"  TextWrapping="Wrap" Foreground="Black" Text="" VerticalAlignment="Top" Width="374" Margin="146,326,0,0" FontSize="14"/>
-            <Label Visibility="Hidden" Name="Label1" Content="Выберите тип одежды:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="86,11,0,0" Width="161"/>
-            <Label Visibility="Hidden" Name="Label3" Content="Во что:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="372,99,0,0"/>
-            <Label Visibility="Hidden" Name="Label2" Content="Из чего:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,99,0,0" Width="59"/>
-            <Button Content="Вычислить" Visibility="Hidden" Name="Solve" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" RenderTransformOrigin="1.973,5.453" Click="Solve_Click" Margin="146,269,0,0"/>
-            <Label Name="LabelWeight" Visibility="Hidden" IsEnabled="True" Content="Ваш вес,кг" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="394,140,0,0"/>
-            <Label Name ="LabelHeight" Visibility="Hidden" IsEnabled="True" Content="Ваш рост, см" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="146,140,0,0" Width="90"/>
-            <Button Name="Calculate" Visibility="Hidden" Click="Calculate_Click" Content="Рассчитать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="131" Margin="252,248,0,0"/>
-            <TextBox Name="Answer1" Foreground="Black" IsReadOnly="True" Visibility="Hidden" BorderThickness="0" HorizontalAlignment="Left" Height="78" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="247" Margin="214,326,0,0"/>
+            </TabPanel>
         </Grid>
-        <Label Name="Help" Foreground="Black" Visibility="Hidden" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="440,16,0,0" Width="231" FontSize="14" FontWeight="Bold"/>
-        <Grid Visibility="Hidden" Name="GridBack1" Width="40" Height="40" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="96,90,580,0" >
-            <materialDesign:PackIcon Foreground="#FF2B75E0"  HorizontalAlignment="Center" VerticalAlignment="Center" Kind="ArrowBack" Width="30" Height="30"/>
-            <Button x:Name="Back1" BorderBrush="{x:Null}" Width="40" Height="40"  Background="{x:Null}" VerticalAlignment="Top" Click="Back1_Click" >
-                <Button.ToolTip>
-                    <ToolTip>
-                        Вернуться назад
-                    </ToolTip>
-                </Button.ToolTip>
-            </Button>
+      
+        <Grid x:Name="MWC" Height="400" Visibility="Hidden" VerticalAlignment="Bottom">
+            <ComboBox  Foreground="Black" Visibility="Visible" Name="Combobox1"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="208" Margin="127,42,0,0" SelectionChanged="ComboBox1_SelectionChanged" />
+            <ComboBox Foreground="Black" Visibility="Visible" Name="Combobox2" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170"  Margin="127,130,0,0" SelectionChanged="ComboBox2_SelectionChanged" />
+                <ComboBox Foreground="Black" Visibility="Visible" Name="Combobox3" HorizontalAlignment="Left" VerticalAlignment="Top" Width="170" Margin="372,130,0,0"/>
+                <ComboBox  Visibility="Visible" Name="Number" Foreground="Black" HorizontalAlignment="Left" Height="40"  Text="" FontSize="14" VerticalAlignment="Top" Width="186" Margin="127,215,0,0"/>
+                <Label Visibility="Visible" Name="Label4" FontSize="16" Content="Выберите размер:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,184,0,0" Width="150"/>
+            <TextBox Name="Answer" IsReadOnly="True" BorderThickness="0"  Visibility="Visible" HorizontalAlignment="Left" Height="40" HorizontalContentAlignment="Center"  TextWrapping="Wrap" Foreground="Black" Text="" VerticalAlignment="Top" Width="374" Margin="146,315,0,0" FontSize="18"/>
+                <Label Visibility="Visible" Name="Label1" FontSize="16" Content="Выберите тип одежды:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,11,0,0" Width="180"/>
+                <Label Visibility="Visible" Name="Label3" FontSize="16" Width="70" Content="Во что:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="372,99,0,0"/>
+                <Label Visibility="Visible" Name="Label2" FontSize="16" Width="75" Content="Из чего:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="127,99,0,0"/>
+            <Button Content="Вычислить" Visibility="Visible" Name="Solve" HorizontalAlignment="Left" VerticalAlignment="Top" Width="122" FontSize="16" RenderTransformOrigin="1.973,5.453" Click="Solve_Click" Margin="130,269,0,0"/>
         </Grid>
-        <TextBox Name="Weight" PreviewKeyDown="Weight_PreviewKeyDown" PreviewTextInput="Weight_PreviewTextInput" Visibility="Hidden"  Foreground="Black" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="372,183,0,0"/>
-        <TextBox Name="Height" PreviewKeyDown="Height_PreviewKeyDown" PreviewTextInput="Height_PreviewTextInput" Visibility="Hidden" Foreground="Black" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="126,183,0,0"/>
-        <Label Name="Name" Visibility="Hidden" Content="Калькулятор индекса массы тела" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="180,25,0,0" Width="260" FontSize="14" FontWeight="Bold"/>
+
+        <Grid x:Name="IndexMassu" Visibility="Hidden">
+            <Label Name="LabelWeight" Visibility="Visible" IsEnabled="True" Content="Ваш вес,кг" HorizontalAlignment="Right" VerticalAlignment="Top" Width="120" FontSize="18" Margin="0,140,160,0"/>
+            <Label Name ="LabelHeight" Visibility="Visible" IsEnabled="True" Content="Ваш рост, см" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Margin="160,140,0,0" Width="120"/>
+            <Button Name="Calculate" Visibility="Visible" Click="Calculate_Click" Content="Рассчитать" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center" Width="131" Margin="0,50,0,0" />
+            <TextBox Name="Weight" PreviewKeyDown="Weight_PreviewKeyDown" PreviewTextInput="Weight_PreviewTextInput" Visibility="Visible"  Foreground="Black" HorizontalAlignment="Right" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="0,183,160,0"/>
+            <TextBox Name="Height" PreviewKeyDown="Height_PreviewKeyDown" PreviewTextInput="Height_PreviewTextInput" Visibility="Visible" Foreground="Black" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="160,183,0,0"/>
+            <TextBox Name="Answer1" Foreground="Black" IsReadOnly="True" Visibility="Visible" BorderThickness="0" HorizontalAlignment="Center" Height="78" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="18" Width="350" Margin="0,320,0,0"/>
+        </Grid>
     </Grid>
+    
 </UserControl>

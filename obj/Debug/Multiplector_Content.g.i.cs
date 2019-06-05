@@ -8,6 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("autorization/registration.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thickness3.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thickness5.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thickness7.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("image/thicknesses.png")]
 
 

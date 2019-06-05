@@ -11,17 +11,13 @@
         <Grid x:Name="PaintMenu"  Width="712" Height="70" VerticalAlignment="Top" Background="WhiteSmoke">
             <TabPanel>
                 <StackPanel Height="70" >
-                    <TabPanel Width="120" Height="55">
-                        <Grid>
-                            <materialDesign:PackIcon Foreground="Black" Kind="FilePlus" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                            <Button x:Name="Open" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" Click="Open_Click" />
-                        </Grid>
+                    <TabPanel Width="60" Height="55">
                         <Grid>
                             <materialDesign:PackIcon Foreground="Black" Kind="FolderDownload" Width="35" Height="35" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                             <Button x:Name="Save" Width="60" Height="55" Background="{x:Null}" BorderBrush="{x:Null}" VerticalAlignment="Top" Click="Save_Click"/>
                         </Grid>
                     </TabPanel>
-                    <TextBlock  Foreground="Gray"   Text="Буфер обмена"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
+                    <TextBlock  Foreground="Gray"   Text="Сохранить"  FontSize="10" VerticalAlignment="Top" HorizontalAlignment="Center" />
                 </StackPanel>
                 <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
                 <StackPanel Height="70">
@@ -43,28 +39,28 @@
                 </StackPanel>
                 <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
                 <StackPanel Height="70" Cursor="Hand">
-                    <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="70" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
+                    <ComboBox x:Name="cbxThickness" Cursor="Hand" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="55" MaxDropDownHeight="1000" SelectionChanged="CbxThickness_SelectionChanged" >
                         <ComboBox.Background>
                             <ImageBrush  ImageSource="{Binding}" Stretch="UniformToFill"/>
                         </ComboBox.Background>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="1 px" Margin="0,0,0.4,0" >
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="C:\project\image\Thickness1.png"/>
+                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness1.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="3 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="C:\project\image\Thickness3.png"/>
+                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness3.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="5 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="C:\project\image\Thickness5.png"/>
+                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness5.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                         <ComboBoxItem Cursor="Hand" Height="30" Width="70" ToolTip="7 px" Margin="0,0,0.4,0">
                             <ComboBoxItem.Background>
-                                <ImageBrush ImageSource="C:\project\image\Thickness7.png"/>
+                                <ImageBrush ImageSource="D:\GitHubProject\image\Thickness7.png"/>
                             </ComboBoxItem.Background>
                         </ComboBoxItem>
                     </ComboBox>
@@ -72,7 +68,7 @@
                 </StackPanel>
                 <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
                 <StackPanel Height="70">
-                    <TabPanel Width="182" Height="55">
+                    <TabPanel Width="183" Height="55">
                         <StackPanel Width="26" Height="55">
                             <Button x:Name="BlackColor" BorderBrush="{x:Null}" Height="25" Width="25" Background="Black" VerticalAlignment="Top" Click="BlackColor_Click" />
                             <Button x:Name="WhiteColor" BorderBrush="{x:Null}" Height="25" Width="25" Background="White" VerticalAlignment="Bottom" Click="WhiteColor_Click" />
@@ -106,9 +102,9 @@
                 </StackPanel>
                 <GridSplitter  ShowsPreview="False" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
             </TabPanel>
-            
-        </Grid>
 
+        </Grid>
+        
         <InkCanvas x:Name="PaintCanvas"  Width="712" Height="430" VerticalAlignment="Bottom">
 
         </InkCanvas>

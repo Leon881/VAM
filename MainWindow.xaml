@@ -40,16 +40,15 @@
     <Grid Background="WhiteSmoke">
         <Grid Height="70" VerticalAlignment="Top" Background="#FF2B75E0">
             <TextBlock x:Name="title34" Text="Multitool" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22"/>
-            <Button x:Name="Autorization" Content="Вход" Width="70" Margin="500,0,0,0" Click="Autorization_Click"></Button>
-            <TextBlock x:Name="UserLogin" Width="70" Height="17" Margin="500,0,0,26" Foreground="White" FontWeight="Bold"  Visibility="Hidden"  FontSize="15" TextAlignment="Center" TextWrapping="Wrap"/>
-            <Button x:Name="SignOut" Content="Выйти" Width="73" Height="25"  FontSize="14" Margin="500,24,0,0"  Visibility="Hidden"  Click="SignOut_Click"/>
+            <Button x:Name="Autorization" Background="{x:Null}" BorderBrush="{x:Null}" Content="Вход" VerticalAlignment="Center" FontSize="20" Width="80" Margin="570,0,0,0" Click="Autorization_Click" FontWeight="Normal"/>
+            <TextBlock x:Name="UserLogin" Width="70" Height="17" Margin="570,0,0,26" Foreground="White" FontWeight="Bold"  Visibility="Hidden"  FontSize="15" TextAlignment="Center" TextWrapping="Wrap"/>
+            <Button x:Name="SignOut" Background="{x:Null}" BorderBrush="{x:Null}" Content="Выйти" Width="73" Height="25"  FontSize="14" Margin="570,24,0,0"  Visibility="Hidden"  Click="SignOut_Click" FontWeight="Normal" />
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right">
                 <TextBlock  VerticalAlignment="Center" FontSize="18"/>
                 <materialDesign:PopupBox Margin="05" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
                     <StackPanel Width="150">
                         <Button Content="Инструкция" Click="Instructions_Click" />
                         <Button Content="Создатели" Click="AboutProgramm_Click"/>
-                        <Button Content="Настройки" /> 
                         <Button x:Name="ExcelExport" Content="Экпорт БД " Visibility="Hidden"  Click="ExcelExport_Click"/>
                         <Separator/>
                         <Button x:Name="ButtonPopUp" Content="Выход" Click="ButtonPopUp_Click"/>

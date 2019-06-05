@@ -12,6 +12,6 @@
         <TextBox Name="NewUsername" FontSize="20" Margin="20 5" KeyUp="NewUsername_KeyUp"/>
         <Label Content="Пароль" FontSize="15" HorizontalAlignment="Center"/>
         <PasswordBox Name="NewPassword" FontSize="20" Margin="20 5" KeyUp="NewPassword_KeyUp"/>
-        <Button Name="Registrate" Content="Готово" FontSize="20px" Width="200px" Margin="0 5px" Click="Registrate_Click"/>
+        <Button Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF2B75E0" Name="Registrate" Content="Готово" FontSize="20px" Width="200px" Margin="0 5px" Click="Registrate_Click" FontWeight="Normal" />
     </StackPanel>
 </Window>

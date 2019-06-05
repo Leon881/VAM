@@ -29,7 +29,7 @@ namespace Multiplector.Tools
         {
             InitializeComponent();
             ImageBrush ib = new ImageBrush();
-            ib.ImageSource = new BitmapImage(new Uri("C:/project/image/Thicknesses.png", UriKind.Relative));
+            ib.ImageSource = new BitmapImage(new Uri("/image/Thicknesses.png", UriKind.Relative));
             cbxThickness.Background = ib;
 
         }
