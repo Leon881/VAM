@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\project\obj\Debug\
+D:\GitHubProject\obj\Debug\
 Multiplector
 none
 false
 DEBUG;TRACE
-C:\project\App.xaml
+D:\GitHubProject\App.xaml
 10945233760
 
-24-119878520
-24-453537322
+242089527599
+241896409264
 Autorization\MainWindow.xaml;Autorization\Registration.xaml;MainWindow.xaml;Tools\AboutProgramm.xaml;Tools\CalendarTool.xaml;Tools\ConverterTool.xaml;Tools\Calculator.xaml;Tools\ClothesTool.xaml;Tools\Information.xaml;Tools\PaintTool.xaml;
 
 False

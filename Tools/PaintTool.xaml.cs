@@ -27,7 +27,7 @@ namespace Multiplector.Tools
 
         public PaintTool()
         {
-            InitializeComponent();
+            InitializeComponent();          
         }
 
         private void BlackColor_Click(object sender, RoutedEventArgs e)
@@ -185,23 +185,21 @@ namespace Multiplector.Tools
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dlgSave = new Microsoft.Win32.SaveFileDialog();
-            dlgSave.FileName = "MultitoolPaintImage"; // Default file name
-            dlgSave.DefaultExt = ".jpg"; // Default file extension
-            dlgSave.Filter = "Image (.jpg)|*.jpg"; // Filter files by extension
-
-            // Show save file dialog box
-            Nullable<bool> result = dlgSave.ShowDialog();
-
-            // Process save file dialog box results
+            dlgSave.FileName = "MultitoolPaintImage"; // Имя файла по умолчанию
+            dlgSave.DefaultExt = ".jpg"; // Формат файса по умолчанию
+            dlgSave.Filter = "Image (.jpg)|*.jpg"; // Фильтр доступных расширений
+            
+            Nullable<bool> result = dlgSave.ShowDialog();// Вывод окна сохранения на экран
+         
             if (result == true)
             {
                 // Save document
-                string filename = dlgSave.FileName;
-                //get the dimensions of the ink control       
+                string filename = dlgSave.FileName;// Сохранение файла                 
+                //Получаем размеры элемента InkCanvas
                 int margin = (int)this.PaintCanvas.Margin.Left;
                 int width = (int)this.PaintCanvas.Width -margin;
                 int height = (int)this.PaintCanvas.Height-margin;
-                //render ink to bitmap
+                //Переводим содержимое InkCanvas в растровое изображение
                 RenderTargetBitmap rtb = new RenderTargetBitmap(width, height, 96d, 96d, PixelFormats.Default);
                 DrawingVisual drawingVisual = new DrawingVisual();
                 using (DrawingContext drawingContext = drawingVisual.RenderOpen())
@@ -211,7 +209,7 @@ namespace Multiplector.Tools
                         new Rect(new Point(0, 0), new Size(width, height)));
                 }
                 rtb.Render(drawingVisual);
-                //saving bitmap
+                //Сохраняем изображение
                 using (FileStream savestream = new FileStream(filename, FileMode.Create))
                 {
                     BmpBitmapEncoder encoder = new BmpBitmapEncoder();
