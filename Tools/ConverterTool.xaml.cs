@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Windows.Threading;
+using Multiplector.Classes;
 
 namespace Multiplector.Tools
 {
@@ -139,9 +140,10 @@ namespace Multiplector.Tools
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
             TextBox1.Text.Replace(" ", string.Empty);
+            var error = new Messages();
             if ((ComboBox2.Text == "") || (ComboBox3.Text == "") || (TextBox1.Text == ""))
             {
-                Answer.Text = "Необходимо ввести данные во все поля";
+                Answer.Text = error.Message4();
                 DispatcherTimer tm = new DispatcherTimer
                 {
                     Interval = new TimeSpan(0, 0, 3)

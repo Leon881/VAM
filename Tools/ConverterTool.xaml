@@ -9,7 +9,7 @@
               d:DesignHeight="500" d:DesignWidth="712">
     <Grid Width="712" Height="500">
 
-        <ComboBox x:Name="ComboBox1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Foreground="Black" Margin="39,84,0,0" Height="35" StaysOpenOnEdit="True" IsEditable="True" FontSize="16" SelectionChanged="ComboBox1_SelectionChanged">
+        <ComboBox x:Name="ComboBox1"   HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Foreground="Black" Margin="39,84,0,0" Height="35" StaysOpenOnEdit="True" IsEditable="True" FontSize="16" SelectionChanged="ComboBox1_SelectionChanged">
             <ComboBoxItem Content="Масса" />
             <ComboBoxItem Content="Валюта"/>
             <ComboBoxItem Content="Длина"/>

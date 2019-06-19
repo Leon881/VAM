@@ -387,7 +387,7 @@ namespace Multiplector.Tools
                 Timer();
                 return;
             }
-            var info = new Information
+            var info = new ClothesCalculation
             {
                 box1 = (string)Combobox1.SelectedItem,
                 box2 = (string)Combobox2.SelectedItem,

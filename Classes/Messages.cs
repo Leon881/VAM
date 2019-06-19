@@ -22,7 +22,7 @@ namespace Multiplector.Classes
         }
         public string Message4()
         {
-            return "Выражение не может заканчиваться знаком";
+            return "Необходимо ввести данные во все поля!";
         }
         public string EasterEgg()
         {
@@ -34,7 +34,7 @@ namespace Multiplector.Classes
         }
         public string Message6()
         {
-            return "Не выбраны типы размеров одежды!";
+            return "Не выбран тип размера одежды!";
         }
         public string Message7()
         {
@@ -43,6 +43,14 @@ namespace Multiplector.Classes
         public string Message8()
         {
             return "Вы не ввели свой вес!";
+        }
+        public string Message9()
+        {
+            return "Вы не выбрали даты для расчета!";
+        }
+        public string Message10()
+        {
+            return "Вы не выбрали дату для расчета!";
         }
     }
 }

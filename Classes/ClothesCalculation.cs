@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Multiplector.Classes
 {
-    class Information
+    class ClothesCalculation
     {
         public string box1;
         public string box2;

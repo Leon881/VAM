@@ -96,7 +96,7 @@
     <Compile Include="Autorization\RegPrivileges.cs" />
     <Compile Include="Autorization\SqlDataAccess.cs" />
     <Compile Include="Autorization\UserForm.cs" />
-    <Compile Include="Classes\Information.cs" />
+    <Compile Include="Classes\ClothesCalculation.cs" />
     <Compile Include="Classes\Messages.cs" />
     <Compile Include="Tools\AboutProgramm.xaml.cs">
       <DependentUpon>AboutProgramm.xaml</DependentUpon>

@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Multiplector.Classes;
+using System.Windows.Threading;
 
 namespace Multiplector.Tools
 {
@@ -28,6 +30,25 @@ namespace Multiplector.Tools
 
         private void SolveButton_Click(object sender, RoutedEventArgs e)
         {
+            var error = new Messages();
+            if(Date1.Text =="" || Date2.Text=="")
+            {
+                if (Date1.Text == "" && Date2.Text == "" && flagForButton2==false)
+                    Answer.Text = error.Message9();
+                else if (Date1.Text == "" || Date2.Text == "")
+                    Answer.Text = error.Message10();
+                DispatcherTimer tm = new DispatcherTimer
+                {
+                    Interval = new TimeSpan(0, 0, 2)
+                };
+                tm.Tick += (s, ea) =>
+                {
+                    Answer.Text = string.Empty;
+                    tm.Stop();
+                };
+                tm.Start();
+                return;
+            }
             if (flagForButton1==true)
             {
                 SolveDate();
